@@ -1,7 +1,7 @@
 "use client";
 
-import { QuizState, selectChoice, submitAnswer, goToNextQuestion, formatDifficulty, formatCategory } from "../../data/gameState";
-import { Choice } from "../../data/quiz";
+import { QuizState, selectAnswer, submitAnswer, goToNextQuestion, formatDifficulty, formatCategory } from "../../data/gameState";
+import { Choice, QuestionType } from "../../data/quiz";
 
 interface QuestionProps {
   gameState: QuizState;
@@ -16,15 +16,25 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
   }
 
   const handleSelectChoice = (index: number) => {
-    selectChoice(gameState, index);
+      selectAnswer(gameState, index);
     setGameState({ ...gameState });
   };
+
+    const handleTextInput = (text: string) => {
+      selectAnswer(gameState, text);
+      setGameState({ ...gameState });
+    };
+
+    const handleTrueFalse = (value: boolean) => {
+      selectAnswer(gameState, value ? 1 : 0);
+      setGameState({ ...gameState });
+    };
 
   const handleSubmit = () => {
     const success = submitAnswer(gameState);
     if (success) {
       setGameState({ ...gameState });
-    } else if (gameState.selectedChoiceIndex === null) {
+      } else if (gameState.selectedAnswer === null) {
       alert("Please select an answer first!");
     }
   };
@@ -39,13 +49,16 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
     
     if (!gameState.isAnswered) {
       return `${baseClass} ${
-        gameState.selectedChoiceIndex === index
+          gameState.selectedAnswer === index
           ? "border-blue-500 bg-blue-900 text-white"
           : "border-gray-600 bg-gray-800 text-white hover:border-blue-400 hover:bg-gray-700"
       }`;
     }
 
-    const isSelected = gameState.selectedChoiceIndex === index;
+    // Only multiple-choice questions have choices — guard access
+    if (question.type !== QuestionType.MultipleChoice) return baseClass;
+
+    const isSelected = gameState.selectedAnswer === index;
     const isCorrect = question.choices[index].isCorrect;
 
     if (isCorrect) {
@@ -72,24 +85,78 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
         </span>
       </div>
 
-      <h2 className="text-2xl font-bold mb-6 text-white">{question.question}</h2>
+        <h2 className="text-2xl font-bold mb-6 text-white">
+          {question.type === QuestionType.TrueFalse ? question.statement : question.question}
+        </h2>
 
       <div className="mb-6">
-        {question.choices.map((choice: Choice, index: number) => (
-          <button
-            key={index}
-            onClick={() => handleSelectChoice(index)}
-            disabled={gameState.isAnswered}
-            className={getChoiceClassName(index)}
-          >
-            <div className="flex items-start">
-              <span className="font-semibold mr-3">
-                {String.fromCharCode(65 + index)}.
-              </span>
-              <span>{choice.text}</span>
+        {question.type === QuestionType.MultipleChoice && (
+          <div>
+            {question.choices.map((choice: Choice, index: number) => (
+              <button
+                key={index}
+                onClick={() => handleSelectChoice(index)}
+                disabled={gameState.isAnswered}
+                className={getChoiceClassName(index)}
+              >
+                <div className="flex items-start">
+                  <span className="font-semibold mr-3">
+                    {String.fromCharCode(65 + index)}.
+                  </span>
+                  <span>{choice.text}</span>
+                </div>
+              </button>
+            ))}
+          </div>
+        )}
+        
+          {question.type === QuestionType.FillInTheBlank && (
+            <div className="mb-4">
+              <input
+                type="text"
+                placeholder="Type your answer here..."
+                onChange={(e) => handleTextInput(e.target.value)}
+                value={gameState.selectedAnswer as string || ''}
+                disabled={gameState.isAnswered}
+                className="w-full p-4 bg-gray-800 text-white rounded-lg border-2 border-gray-600 focus:border-blue-500 outline-none"
+              />
             </div>
-          </button>
-        ))}
+          )}
+        
+          {question.type === QuestionType.TrueFalse && (
+            <div className="flex gap-4 justify-center">
+              <button
+                onClick={() => handleTrueFalse(true)}
+                disabled={gameState.isAnswered}
+                className={`px-8 py-4 rounded-lg font-semibold transition-all ${
+                  !gameState.isAnswered
+                    ? gameState.selectedAnswer === 1
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-800 text-white hover:bg-gray-700"
+                    : question.isTrue
+                    ? "bg-green-600 text-white"
+                    : "bg-gray-700 text-gray-300"
+                }`}
+              >
+                True
+              </button>
+              <button
+                onClick={() => handleTrueFalse(false)}
+                disabled={gameState.isAnswered}
+                className={`px-8 py-4 rounded-lg font-semibold transition-all ${
+                  !gameState.isAnswered
+                    ? gameState.selectedAnswer === 0
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-800 text-white hover:bg-gray-700"
+                    : !question.isTrue
+                    ? "bg-green-600 text-white"
+                    : "bg-gray-700 text-gray-300"
+                }`}
+              >
+                False
+              </button>
+            </div>
+          )}
       </div>
 
       {gameState.isAnswered && (
@@ -110,9 +177,9 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
         {!gameState.isAnswered ? (
           <button
             onClick={handleSubmit}
-            disabled={gameState.selectedChoiceIndex === null}
+            disabled={gameState.selectedAnswer === null}
             className={`px-8 py-3 rounded-lg font-semibold text-white transition-all ${
-              gameState.selectedChoiceIndex === null
+              gameState.selectedAnswer === null
                 ? 'bg-gray-600 cursor-not-allowed'
                 : 'bg-blue-600 hover:bg-blue-700 shadow-lg transform hover:scale-105'
             }`}

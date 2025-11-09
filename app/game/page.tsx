@@ -15,7 +15,7 @@ export default function GamePage() {
 
   if (gameState.gameOver) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-linear-to-br from-green-900 via-emerald-900 to-teal-900">
         <h1 className="text-5xl font-bold mb-4 text-white">🎉 Quest Complete! 🎉</h1>
         <p className="text-3xl mb-2 text-yellow-300">Final Score: {gameState.points} points</p>
         <p className="text-xl mb-8 text-gray-300">You've mastered all difficulty levels!</p>
@@ -30,7 +30,7 @@ export default function GamePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 py-8">
+  <div className="min-h-screen bg-linear-to-br from-indigo-900 via-purple-900 to-pink-900 py-8">
       <div className="max-w-4xl mx-auto p-8">
         <h1 className="text-4xl font-bold text-white text-center mb-6">Financial Spellbook</h1>
         <ProgressBars gameState={gameState} />

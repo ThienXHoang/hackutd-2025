@@ -1,0 +1,142 @@
+[
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "id": "B001-TF",
+    "statement": "Monthly rent is considered a fixed expense in a budget.",
+    "isTrue": true
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "id": "B002-TF",
+    "statement": "According to the 50/30/20 budgeting rule, 50% of your income should go toward savings and debt repayment.",
+    "isTrue": false
+  },
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "id": "S001-TF",
+    "statement": "An emergency fund is primarily used for planned purchases like vacations.",
+    "isTrue": false
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "id": "S002-TF",
+    "statement": "Compounding allows you to earn interest on both your initial deposit and the interest you’ve already earned.",
+    "isTrue": true
+  },
+  {
+    "category": "banking",
+    "difficulty": "easy",
+    "id": "BA001-TF",
+    "statement": "Checking accounts are primarily used for daily transactions.",
+    "isTrue": true
+  },
+  {
+    "category": "banking",
+    "difficulty": "medium",
+    "id": "BA002-TF",
+    "statement": "FDIC insurance protects your investment portfolio from stock market losses.",
+    "isTrue": false
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "id": "C001-TF",
+    "statement": "Your payment history has the greatest impact on your FICO credit score.",
+    "isTrue": true
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "id": "C002-TF",
+    "statement": "A higher Credit Utilization Ratio can help increase your credit score.",
+    "isTrue": false
+  },
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "id": "D001-TF",
+    "statement": "A fixed-rate loan has an interest rate that can change over time.",
+    "isTrue": false
+  },
+  {
+    "category": "debt",
+    "difficulty": "hard",
+    "id": "D002-TF",
+    "statement": "The Avalanche Method focuses on paying off debts with the highest interest rate first.",
+    "isTrue": true
+  },
+  {
+    "category": "investing",
+    "difficulty": "easy",
+    "id": "I001-TF",
+    "statement": "Diversification reduces investment risk by spreading money across different asset types.",
+    "isTrue": true
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "id": "I002-TF",
+    "statement": "Beta measures how often a company pays dividends to its shareholders.",
+    "isTrue": false
+  },
+  {
+    "category": "retirement",
+    "difficulty": "easy",
+    "id": "R002-TF",
+    "statement": "An employer’s matching contribution to a 401(k) plan is optional and depends on employee participation.",
+    "isTrue": true
+  },
+  {
+    "category": "retirement",
+    "difficulty": "medium",
+    "id": "R001-TF",
+    "statement": "Withdrawals from a Traditional IRA are tax-free during retirement.",
+    "isTrue": false
+  },
+  {
+    "category": "taxes",
+    "difficulty": "medium",
+    "id": "T001-TF",
+    "statement": "A tax credit directly reduces the amount of tax you owe.",
+    "isTrue": true
+  },
+  {
+    "category": "taxes",
+    "difficulty": "hard",
+    "id": "T002-TF",
+    "statement": "If you are in the 24% tax bracket, your entire income is taxed at 24%.",
+    "isTrue": false
+  },
+  {
+    "category": "insurance",
+    "difficulty": "easy",
+    "id": "IN001-TF",
+    "statement": "A deductible is the amount you pay before your insurance begins to cover costs.",
+    "isTrue": true
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "id": "IN002-TF",
+    "statement": "Whole life insurance covers you for a specific period and does not build cash value.",
+    "isTrue": false
+  },
+  {
+    "category": "fraud",
+    "difficulty": "medium",
+    "id": "F001-TF",
+    "statement": "Phishing scams use fake emails or messages to trick people into revealing personal information.",
+    "isTrue": true
+  },
+  {
+    "category": "fraud",
+    "difficulty": "hard",
+    "id": "F002-TF",
+    "statement": "A Ponzi scheme uses money from new investors to pay earlier investors instead of generating real profit.",
+    "isTrue": true
+  }
+]

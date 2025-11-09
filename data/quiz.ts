@@ -1,4 +1,6 @@
-import questions from "./questions.json";
+import mcQuestions from "./questions.json";
+import fbQuestions from "./questionsFB.json";
+import tfQuestions from "./questionsTF.json";
 
 export enum Difficulty {
   Easy = "easy",
@@ -24,38 +26,88 @@ export interface Choice {
   isCorrect: boolean;
 }
 
-export interface Question {
+export enum QuestionType {
+  MultipleChoice = "mc",
+  FillInTheBlank = "fb",
+  TrueFalse = "tf"
+}
+
+export interface BaseQuestion {
   category: Category;
   difficulty: Difficulty;
   id: string;
+}
+
+export interface MultipleChoiceQuestion extends BaseQuestion {
+  type: QuestionType.MultipleChoice;
   question: string;
   choices: Choice[];
 }
+
+export interface FillInTheBlankQuestion extends BaseQuestion {
+  type: QuestionType.FillInTheBlank;
+  question: string;
+  answer: string;
+}
+
+export interface TrueFalseQuestion extends BaseQuestion {
+  type: QuestionType.TrueFalse;
+  statement: string;
+  isTrue: boolean;
+}
+
+export type Question = MultipleChoiceQuestion | FillInTheBlankQuestion | TrueFalseQuestion;
 
 export type QuestionDict = Map<
   Category,
   Map<Difficulty, Map<string, Question>>
 >;
 
+function addQuestionToDict(dict: QuestionDict, question: Question): void {
+  const category = question.category;
+  const difficulty = question.difficulty;
+  const id = question.id;
+
+  if (!dict.has(category)) {
+    dict.set(category, new Map([[difficulty, new Map([[id, question]])]]));
+  } else {
+    const categoryMap = dict.get(category);
+    if (!categoryMap?.has(difficulty)) {
+      categoryMap?.set(difficulty, new Map([[id, question]]));
+    } else {
+      categoryMap.get(difficulty)?.set(id, question);
+    }
+  }
+}
+
 export const quiz: QuestionDict = (() => {
   let dict: QuestionDict = new Map();
 
-  questions.forEach((q) => {
-    const question = q as Question;
-    const category = question.category as Category;
-    const difficulty = question.difficulty as Difficulty;
-    const id = question.id;
+  // Add Multiple Choice Questions
+  mcQuestions.forEach((q: any) => {
+    const question: MultipleChoiceQuestion = {
+      ...q,
+      type: QuestionType.MultipleChoice
+    };
+    addQuestionToDict(dict, question);
+  });
 
-    if (!dict.has(category)) {
-      dict.set(category, new Map([[difficulty, new Map([[id, question]])]]));
-    } else {
-      const categoryMap = dict.get(category);
-      if (!categoryMap?.has(difficulty)) {
-        categoryMap?.set(difficulty, new Map([[id, question]]));
-      } else {
-        categoryMap.get(difficulty)?.set(id, question);
-      }
-    }
+  // Add Fill in the Blank Questions
+  fbQuestions.forEach((q: any) => {
+    const question: FillInTheBlankQuestion = {
+      ...q,
+      type: QuestionType.FillInTheBlank
+    };
+    addQuestionToDict(dict, question);
+  });
+
+  // Add True/False Questions
+  tfQuestions.forEach((q: any) => {
+    const question: TrueFalseQuestion = {
+      ...q,
+      type: QuestionType.TrueFalse
+    };
+    addQuestionToDict(dict, question);
   });
 
   return dict;

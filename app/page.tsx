@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+  <div className="flex flex-col items-center justify-center min-h-screen bg-linear-to-br from-purple-900 via-blue-900 to-indigo-900">
       <h1 className="text-5xl font-bold mb-8 text-white">Financial Literacy Quest</h1>
       <p className="text-xl mb-8 text-gray-300">Master the spells of finance!</p>
       <Link href="/game">

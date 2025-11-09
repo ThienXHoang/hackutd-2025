@@ -20,7 +20,7 @@ export default function ProgressBars({ gameState }: ProgressBarsProps) {
         </div>
         <div className="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
           <div
-            className="bg-gradient-to-r from-blue-500 to-cyan-500 h-full transition-all duration-500 ease-out"
+            className="bg-linear-to-r from-blue-500 to-cyan-500 h-full transition-all duration-500 ease-out"
             style={{ width: `${pointsPercent}%` }}
           />
         </div>
@@ -37,7 +37,7 @@ export default function ProgressBars({ gameState }: ProgressBarsProps) {
         </div>
         <div className="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
           <div
-            className="bg-gradient-to-r from-purple-500 to-pink-500 h-full transition-all duration-500 ease-out"
+            className="bg-linear-to-r from-purple-500 to-pink-500 h-full transition-all duration-500 ease-out"
             style={{ width: `${masteryPercent}%` }}
           />
         </div>

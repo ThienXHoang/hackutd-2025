@@ -16,7 +16,7 @@ export interface QuizState {
   currentDifficulty: Difficulty;
   currentQuestion: Question | null;
 
-  selectedChoiceIndex: number | null;
+  selectedAnswer: string | number | null;
 
   points: number;
   correctCountByDifficulty: Record<Difficulty, number>;
@@ -39,7 +39,7 @@ export function createInitialQuizState(): QuizState {
     currentDifficulty: startingDifficulty,
     currentQuestion: null,
 
-    selectedChoiceIndex: null,
+    selectedAnswer: null,
 
     points: 0,
     correctCountByDifficulty: {
@@ -107,18 +107,18 @@ export function loadNextQuestion(state: QuizState): void {
   state.usedQuestionIds.add(picked.id);
 
   // Reset per-question stuff
-  state.selectedChoiceIndex = null;
+  state.selectedAnswer = null;
   state.isAnswered = false;
   state.lastAnswerCorrect = null;
 }
 
 // User clicks on a choice option
-export function selectChoice(state: QuizState, choiceIndex: number): void {
+export function selectAnswer(state: QuizState, answer: string | number): void {
   if (state.gameOver) return;
   if (!state.currentQuestion) return;
   if (state.isAnswered) return; // Prevent changing after submit
 
-  state.selectedChoiceIndex = choiceIndex;
+  state.selectedAnswer = answer;
 }
 
 // User hits "Submit"
@@ -126,7 +126,7 @@ export function submitAnswer(state: QuizState): boolean {
   if (state.gameOver) return false;
   if (!state.currentQuestion) return false;
 
-  if (state.selectedChoiceIndex === null) {
+    if (state.selectedAnswer === null) {
     // UI should show "please select an answer" message
     return false;
   }
@@ -137,8 +137,22 @@ export function submitAnswer(state: QuizState): boolean {
   }
 
   const question = state.currentQuestion;
-  const chosen = question.choices[state.selectedChoiceIndex];
-  const isCorrect = chosen.isCorrect === true;
+    let isCorrect = false;
+
+    switch (question.type) {
+      case 'mc':
+        const chosenIndex = state.selectedAnswer as number;
+        isCorrect = question.choices[chosenIndex].isCorrect === true;
+        break;
+      case 'fb':
+        const userAnswer = (state.selectedAnswer as string).trim().toLowerCase();
+        isCorrect = userAnswer === question.answer.toLowerCase();
+        break;
+      case 'tf':
+        const userIsTrue = state.selectedAnswer === 1;
+        isCorrect = userIsTrue === question.isTrue;
+        break;
+    }
 
   state.isAnswered = true;
   state.lastAnswerCorrect = isCorrect;
@@ -212,6 +226,7 @@ export function goToNextQuestion(state: QuizState): void {
   }
 
   loadNextQuestion(state);
+    state.selectedAnswer = null;
 }
 
 // For a points bar (0–100%)

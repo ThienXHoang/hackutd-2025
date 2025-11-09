@@ -1,0 +1,142 @@
+[
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "id": "B001-FB",
+    "question": "A ______ expense is one that stays the same every month, such as your monthly rent payment.",
+    "answer": "fixed"
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "id": "B002-FB",
+    "question": "According to the 50/30/20 budgeting rule, 20% of your income should go toward ______ and debt repayment.",
+    "answer": "savings"
+  },
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "id": "S001-FB",
+    "question": "An ______ fund is money set aside to cover unexpected expenses like medical bills or job loss.",
+    "answer": "emergency"
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "id": "S002-FB",
+    "question": "The process where the interest you earn also begins to earn interest is called ______.",
+    "answer": "compounding"
+  },
+  {
+    "category": "banking",
+    "difficulty": "easy",
+    "id": "BA001-FB",
+    "question": "A ______ account is mainly for daily transactions, while a savings account is meant for storing and growing funds.",
+    "answer": "checking"
+  },
+  {
+    "category": "banking",
+    "difficulty": "medium",
+    "id": "BA002-FB",
+    "question": "FDIC insurance protects ______ in U.S. banks up to a certain limit, not investments in stocks or bonds.",
+    "answer": "deposits"
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "id": "C001-FB",
+    "question": "Your ______ history has the greatest influence on your FICO credit score.",
+    "answer": "payment"
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "id": "C002-FB",
+    "question": "The Credit Utilization Ratio is calculated as total ______ used divided by total available credit.",
+    "answer": "credit"
+  },
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "id": "D001-FB",
+    "question": "A loan with an interest rate that stays the same throughout its term is said to have a ______ rate.",
+    "answer": "fixed"
+  },
+  {
+    "category": "debt",
+    "difficulty": "hard",
+    "id": "D002-FB",
+    "question": "The ______ Method involves paying off the debt with the highest interest rate first.",
+    "answer": "avalanche"
+  },
+  {
+    "category": "investing",
+    "difficulty": "easy",
+    "id": "I001-FB",
+    "question": "Holding a mix of stocks, bonds, and real estate demonstrates the principle of ______.",
+    "answer": "diversification"
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "id": "I002-FB",
+    "question": "In investing, ______ measures a stock’s price sensitivity relative to the overall market.",
+    "answer": "beta"
+  },
+  {
+    "category": "retirement",
+    "difficulty": "easy",
+    "id": "R001-FB",
+    "question": "An employer’s contribution to an employee’s 401(k) plan, conditional on the employee contributing, is called a ______ contribution.",
+    "answer": "matching"
+  },
+  {
+    "category": "retirement",
+    "difficulty": "medium",
+    "id": "R002-FB",
+    "question": "Contributions to a ______ IRA are made with after-tax dollars, and qualified withdrawals in retirement are tax-free.",
+    "answer": "Roth"
+  },
+  {
+    "category": "taxes",
+    "difficulty": "medium",
+    "id": "T001-FB",
+    "question": "A tax ______ reduces your taxable income, while a tax ______ directly reduces your total tax owed.",
+    "answer": "deduction; credit"
+  },
+  {
+    "category": "taxes",
+    "difficulty": "hard",
+    "id": "T002-FB",
+    "question": "If you are in the 24% marginal tax bracket, only ______ of your total taxable income is taxed at 24%.",
+    "answer": "a portion"
+  },
+  {
+    "category": "insurance",
+    "difficulty": "easy",
+    "id": "IN001-FB",
+    "question": "The amount you pay out of pocket before your insurance coverage starts is called a ______.",
+    "answer": "deductible"
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "id": "IN002-FB",
+    "question": "______ Life Insurance covers you for a specific term and typically does not build cash value.",
+    "answer": "Term"
+  },
+  {
+    "category": "fraud",
+    "difficulty": "medium",
+    "id": "F001-FB",
+    "question": "______ is a type of scam where fraudulent emails trick people into revealing personal information.",
+    "answer": "Phishing"
+  },
+  {
+    "category": "fraud",
+    "difficulty": "hard",
+    "id": "F002-FB",
+    "question": "A ______ Scheme pays returns to old investors using funds from new investors instead of actual profits.",
+    "answer": "Ponzi"
+  }
+]
