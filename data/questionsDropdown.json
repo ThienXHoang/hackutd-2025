@@ -1,0 +1,278 @@
+[
+  {
+    "category": "Income",
+    "difficulty": "easy",
+    "question": "Your _ income is your total salary before any deductions, while your _ income is your 'take-home pay' after taxes.",
+    "blanks": [
+      {
+        "correctAnswer": "gross",
+        "options": ["gross", "net", "taxable", "passive"]
+      },
+      {
+        "correctAnswer": "net",
+        "options": ["net", "gross", "active", "total"]
+      }
+    ]
+  },
+  {
+    "category": "Income",
+    "difficulty": "medium",
+    "question": "_ income is earned from employment or running a business, while _ income comes from assets you own, like stocks or real estate.",
+    "blanks": [
+      {
+        "correctAnswer": "Active",
+        "options": ["Active", "Passive", "Gross", "Net"]
+      },
+      {
+        "correctAnswer": "Passive",
+        "options": ["Passive", "Active", "Total", "Taxable"]
+      }
+    ]
+  },
+  {
+    "category": "Income",
+    "difficulty": "hard",
+    "question": "Income that is subject to taxation is called _ income.",
+    "blanks": [
+      {
+        "correctAnswer": "taxable",
+        "options": ["taxable", "gross", "net", "passive"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "question": "The 50/30/20 rule suggests 50% of income for _, 30% for _, and 20% for savings.",
+    "blanks": [
+      {
+        "correctAnswer": "Needs",
+        "options": ["Needs", "Wants", "Debts", "Investments"]
+      },
+      {
+        "correctAnswer": "Wants",
+        "options": ["Wants", "Needs", "Savings", "Gifts"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "question": "A budget _ occurs when income exceeds expenses, while a budget _ occurs when expenses exceed income.",
+    "blanks": [
+      {
+        "correctAnswer": "surplus",
+        "options": ["surplus", "deficit", "balance", "zero"]
+      },
+      {
+        "correctAnswer": "deficit",
+        "options": ["deficit", "surplus", "overage", "profit"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "hard",
+    "question": "The _ method involves using physical envelopes of cash for different spending categories.",
+    "blanks": [
+      {
+        "correctAnswer": "envelope",
+        "options": ["envelope", "zero-based", "snowball", "digital"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "question": "An _ fund is a savings account used for unforeseen financial problems and should ideally cover 3-6 months of living _.",
+    "blanks": [
+      {
+        "correctAnswer": "emergency",
+        "options": ["emergency", "retirement", "investment", "college"]
+      },
+      {
+        "correctAnswer": "expenses",
+        "options": ["expenses", "income", "debts", "wants"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "question": "_ (Annual Percentage Yield) reflects the total interest earned including compounding, while _ (Annual Percentage Rate) is the simple interest rate for a year.",
+    "blanks": [
+      {
+        "correctAnswer": "APY",
+        "options": ["APY", "APR", "ROI", "WACC"]
+      },
+      {
+        "correctAnswer": "APR",
+        "options": ["APR", "APY", "IRR", "FEE"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "question": "A _ is a savings certificate with a fixed maturity date and interest rate.",
+    "blanks": [
+      {
+        "correctAnswer": "CD",
+        "options": ["CD", "bond", "stock", "IRA"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "easy",
+    "question": "_ means spreading your investments across different types of assets to reduce _.",
+    "blanks": [
+      {
+        "correctAnswer": "Diversification",
+        "options": ["Diversification", "Consolidation", "Liquidation", "Allocation"]
+      },
+      {
+        "correctAnswer": "risk",
+        "options": ["risk", "profit", "taxes", "fees"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "question": "_ interest is when you earn interest on both your initial _ and the interest that has already accumulated.",
+    "blanks": [
+      {
+        "correctAnswer": "Compound",
+        "options": ["Compound", "Simple", "Variable", "Fixed"]
+      },
+      {
+        "correctAnswer": "principal",
+        "options": ["principal", "dividend", "payment", "debt"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "question": "A _ fund pools money from many investors to buy a diversified portfolio, while an _ fund is a type of mutual fund designed to track a benchmark like the S&P 500.",
+    "blanks": [
+      {
+        "correctAnswer": "mutual",
+        "options": ["mutual", "hedge", "pension", "index"]
+      },
+      {
+        "correctAnswer": "index",
+        "options": ["index", "bond", "equity", "growth"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "question": "The Rule of 72 states that you can estimate how long it will take to double your money by dividing 72 by the annual _ rate.",
+    "blanks": [
+      {
+        "correctAnswer": "interest",
+        "options": ["interest", "growth", "inflation", "dividend"]
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "question": "_ debt is backed by collateral, like a house or car, while _ debt is not backed by any asset.",
+    "blanks": [
+      {
+        "correctAnswer": "Secured",
+        "options": ["Secured", "Unsecured", "Revolving", "Fixed"]
+      },
+      {
+        "correctAnswer": "unsecured",
+        "options": ["Unsecured", "Secured", "Installment", "Variable"]
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "question": "The debt _ method involves paying off the smallest balances first, while the debt _ method prioritizes paying off the highest interest rates first.",
+    "blanks": [
+      {
+        "correctAnswer": "snowball",
+        "options": ["snowball", "avalanche", "consolidation", "settlement"]
+      },
+      {
+        "correctAnswer": "avalanche",
+        "options": ["avalanche", "snowball", "refinance", "waterfall"]
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "question": "The debt _ method prioritizes paying off debts with the highest interest rates first.",
+    "blanks": [
+      {
+        "correctAnswer": "avalanche",
+        "options": ["avalanche", "snowball", "waterfall", "consolidation"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "easy",
+    "question": "_ insurance provides a payment to beneficiaries upon the death of the insured, while _ insurance covers medical and surgical expenses.",
+    "blanks": [
+      {
+        "correctAnswer": "Life",
+        "options": ["Life", "Health", "Auto", "Home"]
+      },
+      {
+        "correctAnswer": "Health",
+        "options": ["Health", "Life", "Disability", "Liability"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "question": "A _ is the fixed amount you pay for a covered loss *before* your insurance policy pays, while a _ is the regular payment you make to keep the policy active.",
+    "blanks": [
+      {
+        "correctAnswer": "deductible",
+        "options": ["deductible", "premium", "co-pay", "limit"]
+      },
+      {
+        "correctAnswer": "premium",
+        "options": ["premium", "deductible", "claim", "rider"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "question": "_ insurance replaces a portion of your income if you can't work due to illness or injury, while _ insurance covers damage to your home and personal belongings.",
+    "blanks": [
+      {
+        "correctAnswer": "Disability",
+        "options": ["Disability", "Liability", "Life", "Health"]
+      },
+      {
+        "correctAnswer": "Homeowners",
+        "options": ["Homeowners", "Auto", "Umbrella", "Renters"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "question": "A _ is an amount you must pay out-of-pocket before your insurance coverage kicks in.",
+    "blanks": [
+      {
+        "correctAnswer": "deductible",
+        "options": ["deductible", "premium", "copay", "coinsurance"]
+      }
+    ]
+  }
+]

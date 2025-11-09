@@ -1,135 +1,198 @@
-import mcQuestions from "./questions.json";
-import fbQuestions from "./questionsFB.json";
-import tfQuestions from "./questionsTF.json";
+// data/quiz.ts
+import multipleChoiceData from './questions.json';
+import trueFalseData from './questionsTF.json';
+import dropdownData from './questionsDropdown.json';
+import fillInData from './questionsFB.json';
+import { GameTopic } from './gameTopics';
 
-export enum Difficulty {
-  Easy = "easy",
-  Medium = "medium",
-  Hard = "hard",
+export enum QuestionType {
+  MultipleChoice = 'multiple-choice',
+  TrueFalse = 'true-false',
+  FillInTheBlank = 'fill-in-the-blank',
+  Dropdown = 'dropdown',
 }
 
-export enum Category {
-  Budgeting = "budgeting",
-  Saving = "saving",
-  Banking = "banking",
-  Credit = "credit",
-  Debt = "debt",
-  Investing = "investing",
-  Retirement = "retirement",
-  Taxes = "taxes",
-  Insurance = "insurance",
-  Fraud = "fraud",
-}
+export type Difficulty = 'easy' | 'medium' | 'hard';
 
+// Exported Choice type so components can import it
 export interface Choice {
   text: string;
   isCorrect: boolean;
 }
 
-export enum QuestionType {
-  MultipleChoice = "mc",
-  FillInTheBlank = "fb",
-  TrueFalse = "tf"
-}
-
-export interface BaseQuestion {
-  category: Category;
-  difficulty: Difficulty;
-  id: string;
-  type: QuestionType;
-}
-
-export interface MultipleChoiceQuestion extends BaseQuestion {
+export interface MultipleChoiceQuestion {
   type: QuestionType.MultipleChoice;
+  category: string;
+  difficulty: string;
   question: string;
   choices: Choice[];
 }
 
-export interface FillInTheBlankQuestion extends BaseQuestion {
-  type: QuestionType.FillInTheBlank;
-  question: string;
-  answer: string;
-}
-
-export interface TrueFalseQuestion extends BaseQuestion {
+export interface TrueFalseQuestion {
   type: QuestionType.TrueFalse;
+  category: string;
+  difficulty: string;
   statement: string;
   isTrue: boolean;
 }
 
-export type Question = MultipleChoiceQuestion | FillInTheBlankQuestion | TrueFalseQuestion;
+export interface FillInTheBlankQuestion {
+  type: QuestionType.FillInTheBlank;
+  category: string;
+  difficulty: string;
+  question: string;
+  correctAnswer: string;
+}
 
-export type QuestionDict = Map<
-  Category,
-  Map<Difficulty, Map<string, Question>>
->;
+export interface DropdownQuestion {
+  type: QuestionType.Dropdown;
+  category: string;
+  difficulty: string;
+  question: string;
+  blanks: {
+    correctAnswer: string;
+    options: string[];
+  }[];
+}
 
-function addQuestionToDict(dict: QuestionDict, question: Question): void {
-  const category = question.category;
-  const difficulty = question.difficulty;
-  const id = question.id;
+export type Question =
+  | MultipleChoiceQuestion
+  | TrueFalseQuestion
+  | FillInTheBlankQuestion
+  | DropdownQuestion;
 
-  if (!dict.has(category)) {
-    dict.set(category, new Map([[difficulty, new Map([[id, question]])]]));
-  } else {
-    const categoryMap = dict.get(category);
-    if (!categoryMap?.has(difficulty)) {
-      categoryMap?.set(difficulty, new Map([[id, question]]));
-    } else {
-      categoryMap.get(difficulty)?.set(id, question);
-    }
+// Convert multiple choice data
+const multipleChoiceQuestions: MultipleChoiceQuestion[] = multipleChoiceData.map((q: any) => ({
+  type: QuestionType.MultipleChoice,
+  category: q.category,
+  difficulty: q.difficulty,
+  question: q.question,
+  choices: q.choices,
+}));
+
+// Convert true/false data
+const trueFalseQuestions: TrueFalseQuestion[] = trueFalseData.map((q: any) => ({
+  type: QuestionType.TrueFalse,
+  category: q.category,
+  difficulty: q.difficulty,
+  statement: q.statement,
+  isTrue: q.isTrue,
+}));
+
+// Convert dropdown data
+const dropdownQuestions: DropdownQuestion[] = dropdownData.map((q: any) => ({
+  type: QuestionType.Dropdown,
+  category: q.category,
+  difficulty: q.difficulty,
+  question: q.question,
+  blanks: q.blanks || [],
+}));
+
+// Convert fill-in-the-blank data (FRQ style)
+const fillInQuestions: FillInTheBlankQuestion[] = fillInData.map((q: any) => ({
+  type: QuestionType.FillInTheBlank,
+  category: q.category,
+  difficulty: q.difficulty,
+  question: q.question,
+  correctAnswer: q.answer,
+}));
+
+export const allQuestions: Question[] = [
+  ...multipleChoiceQuestions,
+  ...trueFalseQuestions,
+  ...dropdownQuestions,
+  ...fillInQuestions,
+];
+
+// Topic to category mapping
+function questionMatchesTopic(q: Question, topic: GameTopic): boolean {
+  const category = q.category.toLowerCase();
+  
+  switch (topic) {
+    case GameTopic.Income:
+      return category === 'income' || category === 'banking' || category === 'taxes';
+    
+    case GameTopic.Budgeting:
+      return category === 'budgeting';
+    
+    case GameTopic.Saving:
+      return category === 'saving';
+    
+    case GameTopic.Investing:
+      return category === 'investing';
+    
+    case GameTopic.DebtManagement:
+      return category === 'debt management' || category === 'debt' || category === 'credit';
+    
+    case GameTopic.RiskManagement:
+      return category === 'risk management' || category === 'insurance' || category === 'fraud';
+    
+    default:
+      return false;
   }
 }
 
-export const quiz: QuestionDict = (() => {
-  let dict: QuestionDict = new Map();
-
-  // Add Multiple Choice Questions
-  mcQuestions.forEach((q: any) => {
-    const question: MultipleChoiceQuestion = {
-      ...q,
-      type: QuestionType.MultipleChoice,
-      category: q.category as Category,
-      difficulty: q.difficulty as Difficulty
-    };
-    addQuestionToDict(dict, question);
+// Get random question for a topic and difficulty with type filtering
+export function getRandomQuestionForTopic(
+  topic: GameTopic,
+  difficulty: Difficulty
+): Question | null {
+  // Filter by topic and difficulty
+  const byTopicAndDifficulty = allQuestions.filter((q) => {
+    const matchesTopic = questionMatchesTopic(q, topic);
+    const matchesDifficulty = q.difficulty.toLowerCase() === difficulty.toLowerCase();
+    return matchesTopic && matchesDifficulty;
   });
 
-  // Add Fill in the Blank Questions
-  fbQuestions.forEach((q: any) => {
-    const question: FillInTheBlankQuestion = {
-      ...q,
-      type: QuestionType.FillInTheBlank,
-      category: q.category as Category,
-      difficulty: q.difficulty as Difficulty
-    };
-    addQuestionToDict(dict, question);
+  // Determine allowed types based on difficulty
+  let allowedTypes: QuestionType[];
+  if (difficulty === 'hard') {
+    // HARD: use FRQ fill-in + MC + TF, but NO dropdown
+    allowedTypes = [
+      QuestionType.FillInTheBlank,
+      QuestionType.MultipleChoice,
+      QuestionType.TrueFalse,
+    ];
+  } else {
+    // EASY / MEDIUM: allow MC + TF + Dropdown, skip FRQ
+    allowedTypes = [
+      QuestionType.MultipleChoice,
+      QuestionType.TrueFalse,
+      QuestionType.Dropdown,
+    ];
+  }
+
+  // Group questions by allowed types
+  const questionsByType: Record<QuestionType, Question[]> = {} as any;
+  allowedTypes.forEach((type) => {
+    questionsByType[type] = byTopicAndDifficulty.filter((q) => q.type === type);
   });
 
-  // Add True/False Questions
-  tfQuestions.forEach((q: any) => {
-    const question: TrueFalseQuestion = {
-      ...q,
-      type: QuestionType.TrueFalse,
-      category: q.category as Category,
-      difficulty: q.difficulty as Difficulty
-    };
-    addQuestionToDict(dict, question);
-  });
+  // Filter out types with no questions
+  const availableTypes = allowedTypes.filter((type) => questionsByType[type].length > 0);
 
-  return dict;
-})();
+  if (availableTypes.length === 0) {
+    console.warn(`No questions found for topic: ${topic}, difficulty: ${difficulty}`);
+    return null;
+  }
 
-export function getRandomCategory(): Category {
-  const categories = Object.values(Category);
-  const randIndex = Math.floor(Math.random() * categories.length);
-  return categories[randIndex];
+  // Randomly pick a type from available types
+  const randomType = availableTypes[Math.floor(Math.random() * availableTypes.length)];
+  const questionsOfType = questionsByType[randomType];
+
+  // Randomly pick a question from the selected type
+  const randomIndex = Math.floor(Math.random() * questionsOfType.length);
+  return questionsOfType[randomIndex];
 }
 
-export function getRandomQuestion(category: Category, difficulty: Difficulty): Question | null {
-  let questionMap = quiz.get(category)?.get(difficulty);
-  if (!questionMap) return null;
-  let questions = Array.from(questionMap.values());
-  let rand = Math.floor(Math.random() * questions.length);
-  return questions[rand];
+// Legacy function for backward compatibility (if needed elsewhere)
+export function getRandomQuestion(category: string, difficulty: string): Question | null {
+  const filtered = allQuestions.filter(
+    (q) => q.category === category && q.difficulty.toLowerCase() === difficulty.toLowerCase()
+  );
+
+  if (filtered.length === 0) return null;
+
+  const randomIndex = Math.floor(Math.random() * filtered.length);
+  return filtered[randomIndex];
 }
