@@ -3,8 +3,6 @@
 import { QuizState, selectAnswer, submitAnswer, goToNextQuestion, formatDifficulty } from "../../data/gameState";
 import { Choice, QuestionType, DropdownQuestion } from "../../data/quiz";
 import { formatGameTopic } from "../../data/gameTopics";
-import Image from "next/image";
-import paperTexture from "@/public/paper-texture.png"; // Update this path to your actual image
 
 interface QuestionProps {
   gameState: QuizState;
@@ -63,8 +61,8 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
     if (!gameState.isAnswered) {
       return `${baseClass} ${
         gameState.selectedAnswer === index
-          ? "border-purple-500 bg-purple-700 text-white"
-          : "border-amber-600 bg-amber-700/80 text-white hover:border-purple-400 hover:bg-purple-600"
+          ? "border-purple-400 bg-purple-800 bg-opacity-60 text-white shadow-lg shadow-purple-500/50"
+          : "border-purple-700 bg-purple-950 bg-opacity-40 text-white hover:border-purple-400 hover:bg-purple-800 hover:bg-opacity-50"
       }`;
     }
 
@@ -74,11 +72,11 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
     const isCorrect = question.choices[index].isCorrect;
 
     if (isCorrect) {
-      return `${baseClass} border-green-500 bg-green-700 text-white`;
+      return `${baseClass} border-green-500 bg-green-800 bg-opacity-60 text-white shadow-lg shadow-green-500/50`;
     } else if (isSelected && !isCorrect) {
-      return `${baseClass} border-red-500 bg-red-700 text-white`;
+      return `${baseClass} border-red-500 bg-red-800 bg-opacity-60 text-white shadow-lg shadow-red-500/50`;
     } else {
-      return `${baseClass} border-gray-600 bg-gray-700/60 text-gray-300 opacity-60`;
+      return `${baseClass} border-purple-800 bg-purple-950 bg-opacity-30 text-gray-400 opacity-60`;
     }
   };
 
@@ -91,8 +89,8 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
       
       return `${baseClass} ${
         hasSelection
-          ? "border-purple-500 bg-purple-700 text-white"
-          : "border-amber-600 bg-amber-700/80 text-white"
+          ? "border-purple-400 bg-purple-800 bg-opacity-60 text-white"
+          : "border-purple-700 bg-purple-950 bg-opacity-40 text-white"
       }`;
     }
 
@@ -105,9 +103,9 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
       const isCorrect = userAnswer?.toLowerCase() === correctAnswer.toLowerCase();
       
       if (isCorrect) {
-        return `${baseClass} border-green-500 bg-green-700 text-white`;
+        return `${baseClass} border-green-500 bg-green-800 bg-opacity-60 text-white`;
       } else {
-        return `${baseClass} border-red-500 bg-red-700 text-white`;
+        return `${baseClass} border-red-500 bg-red-800 bg-opacity-60 text-white`;
       }
     }
 
@@ -122,7 +120,7 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
 
     return (
       <div className="text-xl mb-6 text-white leading-relaxed">
-        {parts.map((part: string, index: number) => (
+        {parts.map((part, index) => (
           <span key={index}>
             {part}
             {index < question.blanks.length && (
@@ -133,7 +131,7 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
                 className={getDropdownClassName(index)}
               >
                 <option value="">Select...</option>
-                {question.blanks[index].options.map((option: string, optIndex: number) => (
+                {question.blanks[index].options.map((option, optIndex) => (
                   <option key={optIndex} value={option}>
                     {option}
                   </option>
@@ -160,15 +158,7 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
   };
 
   return (
-  <div className="mt-8 py-10 px-6 rounded-xl overflow-hidden border-4 shadow-2xl relative min-h-[425px]" style={{ borderColor: '#6b570d' }}>
-    {/* Paper texture background */}
-      <Image 
-        src={paperTexture} 
-        alt="paper background"
-        fill
-        className="object-cover absolute inset-0 -z-10"
-      />
-      
+    <div className="mt-8 p-6 bg-purple-900 bg-opacity-40 rounded-lg shadow-2xl border-2 border-purple-500 backdrop-blur-sm">
       <div className="flex gap-2 mb-4">
         <span className="px-3 py-1 bg-purple-600 text-white rounded-full text-sm font-medium">
           {formatGameTopic(gameState.selectedTopic)}
@@ -219,7 +209,7 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
               onChange={(e) => handleTextInput(e.target.value)}
               value={gameState.selectedAnswer as string || ''}
               disabled={gameState.isAnswered}
-              className="w-full p-4 bg-amber-700/80 text-white rounded-lg border-2 border-amber-600 focus:border-purple-500 outline-none placeholder-amber-200"
+              className="w-full p-4 bg-purple-950 bg-opacity-40 text-white rounded-lg border-2 border-purple-700 focus:border-purple-400 focus:shadow-lg focus:shadow-purple-500/50 outline-none transition-all"
             />
           </div>
         )}
@@ -229,14 +219,14 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
             <button
               onClick={() => handleTrueFalse(true)}
               disabled={gameState.isAnswered}
-              className={`px-8 py-4 rounded-lg font-semibold transition-all ${
+              className={`px-8 py-4 rounded-lg font-semibold transition-all border-2 ${
                 !gameState.isAnswered
                   ? gameState.selectedAnswer === 1
-                    ? "bg-purple-700 text-white border-2 border-purple-500"
-                    : "bg-amber-700/80 text-white border-2 border-amber-600 hover:bg-purple-600"
+                    ? "bg-purple-800 bg-opacity-60 text-white border-purple-400 shadow-lg shadow-purple-500/50"
+                    : "bg-purple-950 bg-opacity-40 text-white border-purple-700 hover:bg-purple-800 hover:bg-opacity-50 hover:border-purple-400"
                   : question.isTrue
-                  ? "bg-green-700 text-white"
-                  : "bg-gray-700 text-gray-300"
+                  ? "bg-green-800 bg-opacity-60 text-white border-green-500 shadow-lg shadow-green-500/50"
+                  : "bg-purple-950 bg-opacity-30 text-gray-400 border-purple-800"
               }`}
             >
               True
@@ -244,14 +234,14 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
             <button
               onClick={() => handleTrueFalse(false)}
               disabled={gameState.isAnswered}
-              className={`px-8 py-4 rounded-lg font-semibold transition-all ${
+              className={`px-8 py-4 rounded-lg font-semibold transition-all border-2 ${
                 !gameState.isAnswered
                   ? gameState.selectedAnswer === 0
-                    ? "bg-purple-700 text-white border-2 border-purple-500"
-                    : "bg-amber-700/80 text-white border-2 border-amber-600 hover:bg-purple-600"
+                    ? "bg-purple-800 bg-opacity-60 text-white border-purple-400 shadow-lg shadow-purple-500/50"
+                    : "bg-purple-950 bg-opacity-40 text-white border-purple-700 hover:bg-purple-800 hover:bg-opacity-50 hover:border-purple-400"
                   : !question.isTrue
-                  ? "bg-green-700 text-white"
-                  : "bg-gray-700 text-gray-300"
+                  ? "bg-green-800 bg-opacity-60 text-white border-green-500 shadow-lg shadow-green-500/50"
+                  : "bg-purple-950 bg-opacity-30 text-gray-400 border-purple-800"
               }`}
             >
               False
@@ -261,10 +251,10 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
       </div>
 
       {gameState.isAnswered && (
-        <div className={`p-4 mb-4 rounded-lg ${
+        <div className={`p-4 mb-4 rounded-lg border-2 ${
           gameState.lastAnswerCorrect 
-            ? 'bg-green-800 text-green-100' 
-            : 'bg-red-800 text-red-100'
+            ? 'bg-green-800 bg-opacity-60 text-green-100 border-green-500 shadow-lg shadow-green-500/50' 
+            : 'bg-red-800 bg-opacity-60 text-red-100 border-red-500 shadow-lg shadow-red-500/50'
         }`}>
           {gameState.lastAnswerCorrect ? (
             <p className="font-semibold">✓ Correct! Great job!</p>
@@ -273,7 +263,7 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
               <p className="font-semibold">✗ Incorrect. Keep learning!</p>
               {question.type === QuestionType.Dropdown && (
                 <p className="mt-2 text-sm">
-                  Correct answers: {question.blanks.map((b: any) => b.correctAnswer).join(', ')}
+                  Correct answers: {question.blanks.map(b => b.correctAnswer).join(', ')}
                 </p>
               )}
             </div>
@@ -286,10 +276,10 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
           <button
             onClick={handleSubmit}
             disabled={isSubmitDisabled()}
-            className={`px-8 py-3 rounded-lg font-semibold text-white transition-all ${
+            className={`px-8 py-3 rounded-lg font-semibold text-white transition-all border-2 ${
               isSubmitDisabled()
-                ? 'bg-gray-600 cursor-not-allowed'
-                : 'bg-purple-700 hover:bg-purple-600 border-2 border-purple-500 shadow-lg transform hover:scale-105'
+                ? 'bg-gray-600 border-gray-500 cursor-not-allowed opacity-60'
+                : 'bg-purple-700 border-purple-500 hover:bg-purple-600 shadow-lg shadow-purple-500/50 transform hover:scale-105'
             }`}
           >
             Submit Answer
@@ -297,7 +287,7 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
         ) : (
           <button
             onClick={handleNext}
-            className="px-8 py-3 bg-amber-700 hover:bg-amber-600 border-2 border-amber-600 text-white rounded-lg font-semibold shadow-lg transform hover:scale-105 transition-all"
+            className="px-8 py-3 bg-green-700 border-2 border-green-500 hover:bg-green-600 text-white rounded-lg font-semibold shadow-lg shadow-green-500/50 transform hover:scale-105 transition-all"
           >
             Next Question →
           </button>
