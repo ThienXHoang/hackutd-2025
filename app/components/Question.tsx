@@ -5,7 +5,7 @@ import { Choice, QuestionType } from "../../data/quiz";
 
 interface QuestionProps {
   gameState: QuizState;
-  setGameState: React.Dispatch<React.SetStateAction<QuizState>>;
+  setGameState: React.Dispatch<React.SetStateAction<QuizState | null>>;
 }
 
 export default function Question({ gameState, setGameState }: QuestionProps) {

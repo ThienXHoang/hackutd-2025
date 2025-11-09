@@ -1,4 +1,5 @@
-import { Category, Difficulty, Question, quiz, getRandomCategory } from './quiz';
+import { Category, Difficulty, Question, quiz } from './quiz';
+import { GameTopic, TopicToCategories } from './gameTopics';
 
 // Order matters for leveling up
 export const DifficultyOrder = [Difficulty.Easy, Difficulty.Medium, Difficulty.Hard];
@@ -12,6 +13,11 @@ export const masteryThreshold: Record<Difficulty, number> = {
 
 // Core state for the quiz session
 export interface QuizState {
+  // NEW: locked-in topic for this run
+  selectedTopic: GameTopic;
+  // NEW: list of underlying categories allowed for this topic
+  allowedCategories: Category[];
+
   currentCategory: Category;
   currentDifficulty: Difficulty;
   currentQuestion: Question | null;
@@ -29,18 +35,29 @@ export interface QuizState {
   gameOver: boolean;
 }
 
-// Initialize a new quiz session
-export function createInitialQuizState(): QuizState {
-  const startingCategory = getRandomCategory();
+// Helper to pick random category from allowed list
+function getRandomAllowedCategory(allowed: Category[]): Category {
+  const idx = Math.floor(Math.random() * allowed.length);
+  return allowed[idx];
+}
+
+// NEW: Initialize a new quiz session with a chosen topic
+export function createQuizStateForTopic(topic: GameTopic): QuizState {
+  const allowedCategories = TopicToCategories[topic];
+
+  // pick a starting category from allowed list
+  const startingCategory = getRandomAllowedCategory(allowedCategories);
   const startingDifficulty = Difficulty.Easy;
 
   const state: QuizState = {
+    selectedTopic: topic,
+    allowedCategories,
+
     currentCategory: startingCategory,
     currentDifficulty: startingDifficulty,
     currentQuestion: null,
 
     selectedAnswer: null,
-
     points: 0,
     correctCountByDifficulty: {
       [Difficulty.Easy]: 0,
@@ -52,61 +69,102 @@ export function createInitialQuizState(): QuizState {
       [Difficulty.Medium]: 0,
       [Difficulty.Hard]: 0,
     },
-
     usedQuestionIds: new Set<string>(),
     isAnswered: false,
     lastAnswerCorrect: null,
-
     gameOver: false,
   };
 
-  // Immediately pick a first question
-  loadNextQuestion(state);
-
+  loadNextQuestion(state); // reuse existing function
   return state;
 }
 
-// Choose a new question given the state's category/difficulty
+// OLD: Keep for backwards compatibility if needed
+export function createInitialQuizState(): QuizState {
+  // Default to Income topic if not using topic selection
+  return createQuizStateForTopic(GameTopic.Income);
+}
+
+// UPDATED: Choose a new question given the state's category/difficulty
 export function loadNextQuestion(state: QuizState): void {
   if (state.gameOver) {
     state.currentQuestion = null;
     return;
   }
 
-  const category = state.currentCategory;
+  let category = state.currentCategory;
   const difficulty = state.currentDifficulty;
 
-  // Grab all questions for this category + difficulty
-  const questionMap = quiz.get(category)?.get(difficulty);
-  
+  // Try to get questions for current category + difficulty
+  let questionMap = quiz.get(category)?.get(difficulty);
+
+  // If no questions for this category at this difficulty, rotate to another allowed category
   if (!questionMap) {
-    // No questions at this difficulty+category: pick a new random category and try again
-    state.currentCategory = getRandomCategory();
-    loadNextQuestion(state);
+    category = getRandomAllowedCategory(state.allowedCategories);
+    state.currentCategory = category;
+    questionMap = quiz.get(category)?.get(difficulty);
+  }
+
+  if (!questionMap) {
+    // If still nothing, we can bail or mark gameOver.
+    state.gameOver = true;
+    state.currentQuestion = null;
     return;
   }
 
-  // Filter out already used questions
+  // Filter out already used questions within allowed categories
   const allQuestions = Array.from(questionMap.values());
   const availableQuestions = allQuestions.filter(
     (q) => !state.usedQuestionIds.has(q.id)
   );
 
   if (availableQuestions.length === 0) {
-    // No more unused questions at this difficulty: change category or end
-    state.currentCategory = getRandomCategory();
-    loadNextQuestion(state);
-    return;
+    // No unused questions for this category + difficulty -> try another allowed category
+    const otherCategories = state.allowedCategories.filter(
+      (c) => c !== category
+    );
+
+    if (otherCategories.length === 0) {
+      state.gameOver = true;
+      state.currentQuestion = null;
+      return;
+    }
+
+    const nextCategory = getRandomAllowedCategory(otherCategories);
+    state.currentCategory = nextCategory;
+
+    const nextMap = quiz.get(nextCategory)?.get(difficulty);
+    if (!nextMap) {
+      state.gameOver = true;
+      state.currentQuestion = null;
+      return;
+    }
+
+    const nextAll = Array.from(nextMap.values());
+    const nextAvailable = nextAll.filter(
+      (q) => !state.usedQuestionIds.has(q.id)
+    );
+
+    if (nextAvailable.length === 0) {
+      state.gameOver = true;
+      state.currentQuestion = null;
+      return;
+    }
+
+    const randIdx = Math.floor(Math.random() * nextAvailable.length);
+    const picked = nextAvailable[randIdx];
+
+    state.currentQuestion = picked;
+    state.usedQuestionIds.add(picked.id);
+  } else {
+    // Normal path: we have available questions in this category
+    const randIdx = Math.floor(Math.random() * availableQuestions.length);
+    const picked = availableQuestions[randIdx];
+
+    state.currentQuestion = picked;
+    state.usedQuestionIds.add(picked.id);
   }
 
-  // Random pick from available
-  const randIndex = Math.floor(Math.random() * availableQuestions.length);
-  const picked = availableQuestions[randIndex];
-
-  state.currentQuestion = picked;
-  state.usedQuestionIds.add(picked.id);
-
-  // Reset per-question stuff
   state.selectedAnswer = null;
   state.isAnswered = false;
   state.lastAnswerCorrect = null;
@@ -126,7 +184,7 @@ export function submitAnswer(state: QuizState): boolean {
   if (state.gameOver) return false;
   if (!state.currentQuestion) return false;
 
-    if (state.selectedAnswer === null) {
+  if (state.selectedAnswer === null) {
     // UI should show "please select an answer" message
     return false;
   }
@@ -137,22 +195,22 @@ export function submitAnswer(state: QuizState): boolean {
   }
 
   const question = state.currentQuestion;
-    let isCorrect = false;
+  let isCorrect = false;
 
-    switch (question.type) {
-      case 'mc':
-        const chosenIndex = state.selectedAnswer as number;
-        isCorrect = question.choices[chosenIndex].isCorrect === true;
-        break;
-      case 'fb':
-        const userAnswer = (state.selectedAnswer as string).trim().toLowerCase();
-        isCorrect = userAnswer === question.answer.toLowerCase();
-        break;
-      case 'tf':
-        const userIsTrue = state.selectedAnswer === 1;
-        isCorrect = userIsTrue === question.isTrue;
-        break;
-    }
+  switch (question.type) {
+    case 'mc':
+      const chosenIndex = state.selectedAnswer as number;
+      isCorrect = question.choices[chosenIndex].isCorrect === true;
+      break;
+    case 'fb':
+      const userAnswer = (state.selectedAnswer as string).trim().toLowerCase();
+      isCorrect = userAnswer === question.answer.toLowerCase();
+      break;
+    case 'tf':
+      const userIsTrue = state.selectedAnswer === 1;
+      isCorrect = userIsTrue === question.isTrue;
+      break;
+  }
 
   state.isAnswered = true;
   state.lastAnswerCorrect = isCorrect;
@@ -191,7 +249,7 @@ function updatePointsAndMastery(state: QuizState, isCorrect: boolean): void {
   checkDifficultyLevelUp(state);
 }
 
-// If mastery is complete, move to next difficulty
+// UPDATED: If mastery is complete, move to next difficulty
 function checkDifficultyLevelUp(state: QuizState): void {
   const currentIndex = DifficultyOrder.indexOf(state.currentDifficulty);
   const difficulty = state.currentDifficulty;
@@ -207,8 +265,8 @@ function checkDifficultyLevelUp(state: QuizState): void {
 
     state.currentDifficulty = nextDifficulty;
 
-    // Optional: reset category too
-    state.currentCategory = getRandomCategory();
+    // Stay within allowed categories
+    state.currentCategory = getRandomAllowedCategory(state.allowedCategories);
 
     // Note: correctCountByDifficulty keeps history
     // masteryProgressByDifficulty[nextDifficulty] starts at 0 anyway
@@ -226,7 +284,7 @@ export function goToNextQuestion(state: QuizState): void {
   }
 
   loadNextQuestion(state);
-    state.selectedAnswer = null;
+  state.selectedAnswer = null;
 }
 
 // For a points bar (0–100%)

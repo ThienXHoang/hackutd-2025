@@ -36,6 +36,7 @@ export interface BaseQuestion {
   category: Category;
   difficulty: Difficulty;
   id: string;
+  type: QuestionType;
 }
 
 export interface MultipleChoiceQuestion extends BaseQuestion {
@@ -87,7 +88,9 @@ export const quiz: QuestionDict = (() => {
   mcQuestions.forEach((q: any) => {
     const question: MultipleChoiceQuestion = {
       ...q,
-      type: QuestionType.MultipleChoice
+      type: QuestionType.MultipleChoice,
+      category: q.category as Category,
+      difficulty: q.difficulty as Difficulty
     };
     addQuestionToDict(dict, question);
   });
@@ -96,7 +99,9 @@ export const quiz: QuestionDict = (() => {
   fbQuestions.forEach((q: any) => {
     const question: FillInTheBlankQuestion = {
       ...q,
-      type: QuestionType.FillInTheBlank
+      type: QuestionType.FillInTheBlank,
+      category: q.category as Category,
+      difficulty: q.difficulty as Difficulty
     };
     addQuestionToDict(dict, question);
   });
@@ -105,7 +110,9 @@ export const quiz: QuestionDict = (() => {
   tfQuestions.forEach((q: any) => {
     const question: TrueFalseQuestion = {
       ...q,
-      type: QuestionType.TrueFalse
+      type: QuestionType.TrueFalse,
+      category: q.category as Category,
+      difficulty: q.difficulty as Difficulty
     };
     addQuestionToDict(dict, question);
   });
