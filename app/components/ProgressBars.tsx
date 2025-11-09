@@ -26,10 +26,10 @@ export default function ProgressBars({ gameState }: ProgressBarsProps) {
   return (
     <div className="mb-8">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold text-white">
-          Score: {gameState.points} pts
+        <h2 className="text-2xl font-bold text-white font-['Charm',_cursive]">
+          Experience: {gameState.points} mana
         </h2>
-        <div className="text-lg text-yellow-300">
+        <div className="text-lg text-yellow-300 ">
           🔥 Streak: {gameState.streak}
         </div>
       </div>
@@ -108,10 +108,10 @@ export default function ProgressBars({ gameState }: ProgressBarsProps) {
 
       <div className="mt-4 text-center">
         <p className="text-sm text-gray-300">
-          Current Level: <span className="font-bold text-white uppercase">{gameState.currentDifficulty}</span>
+          Current tome: <span className="font-bold text-white uppercase">{gameState.currentDifficulty}</span>
         </p>
         <p className="text-xs text-gray-400 mt-1">
-          Get 5 correct answers to advance to the next level!
+          Get 5 correct answers to advance to the unlock the next tome!
         </p>
       </div>
     </div>
