@@ -1,288 +1,49 @@
+
 [
   {
     "category": "budgeting",
     "difficulty": "easy",
-    "id": "B001",
-    "question": "Which of the following is considered a 'fixed expense' in a budget?",
+    "id": "B003",
+    "question": "What is the main purpose of creating a monthly budget?",
     "choices": [
       {
-        "text": "Grocery bill",
-        "isCorrect": false
-      },
-      {
-        "text": "Monthly rent payment",
+        "text": "To track income and plan how to spend and save money",
         "isCorrect": true
       },
       {
-        "text": "Entertainment costs",
+        "text": "To avoid paying taxes",
         "isCorrect": false
       },
       {
-        "text": "Utility bills (gas/electric)",
+        "text": "To qualify for a credit card",
+        "isCorrect": false
+      },
+      {
+        "text": "To increase bank fees",
         "isCorrect": false
       }
     ]
   },
   {
-    "category": "saving",
+    "category": "budgeting",
     "difficulty": "easy",
-    "id": "S001",
-    "question": "What is the primary purpose of an 'emergency fund'?",
+    "id": "B004",
+    "question": "Which of the following is considered a 'variable expense'?",
     "choices": [
       {
-        "text": "To buy a new car",
+        "text": "Car loan payment",
         "isCorrect": false
       },
       {
-        "text": "To cover unexpected expenses like medical bills or job loss",
+        "text": "Streaming subscription",
+        "isCorrect": false
+      },
+      {
+        "text": "Groceries",
         "isCorrect": true
       },
       {
-        "text": "To invest in the stock market",
-        "isCorrect": false
-      },
-      {
-        "text": "To pay for a vacation",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "banking",
-    "difficulty": "medium",
-    "id": "BA001",
-    "question": "What does FDIC insurance primarily protect?",
-    "choices": [
-      {
-        "text": "Investments in stocks and bonds",
-        "isCorrect": false
-      },
-      {
-        "text": "Deposits in most U.S. banks up to a certain limit",
-        "isCorrect": true
-      },
-      {
-        "text": "The value of your home mortgage",
-        "isCorrect": false
-      },
-      {
-        "text": "The interest rate on loans",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "credit",
-    "difficulty": "medium",
-    "id": "C001",
-    "question": "Which factor has the greatest influence on your FICO credit score?",
-    "choices": [
-      {
-        "text": "Types of credit used (e.g., installment, revolving)",
-        "isCorrect": false
-      },
-      {
-        "text": "New credit/recent applications",
-        "isCorrect": false
-      },
-      {
-        "text": "Payment history",
-        "isCorrect": true
-      },
-      {
-        "text": "Length of credit history",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "debt",
-    "difficulty": "easy",
-    "id": "D001",
-    "question": "What is the term for the interest rate on a loan that remains the same for the entire loan period?",
-    "choices": [
-      {
-        "text": "Adjustable rate",
-        "isCorrect": false
-      },
-      {
-        "text": "Variable rate",
-        "isCorrect": false
-      },
-      {
-        "text": "Fixed rate",
-        "isCorrect": true
-      },
-      {
-        "text": "Compounding rate",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "investing",
-    "difficulty": "hard",
-    "id": "I001",
-    "question": "In investing, what does 'beta' measure?",
-    "choices": [
-      {
-        "text": "The long-term growth rate of a stock",
-        "isCorrect": false
-      },
-      {
-        "text": "A stock's price sensitivity relative to the overall market",
-        "isCorrect": true
-      },
-      {
-        "text": "The company's debt-to-equity ratio",
-        "isCorrect": false
-      },
-      {
-        "text": "The annual dividend yield",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "retirement",
-    "difficulty": "medium",
-    "id": "R001",
-    "question": "Contributions to which retirement account are made with after-tax dollars, and qualified withdrawals in retirement are tax-free?",
-    "choices": [
-      {
-        "text": "Traditional 401(k)",
-        "isCorrect": false
-      },
-      {
-        "text": "Traditional IRA",
-        "isCorrect": false
-      },
-      {
-        "text": "Roth IRA",
-        "isCorrect": true
-      },
-      {
-        "text": "SEP IRA",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "taxes",
-    "difficulty": "hard",
-    "id": "T001",
-    "question": "If you are in the 24% marginal tax bracket, what percentage of your **entire** taxable income is taxed at 24%?",
-    "choices": [
-      {
-        "text": "Exactly 24%",
-        "isCorrect": false
-      },
-      {
-        "text": "Less than 24%",
-        "isCorrect": true
-      },
-      {
-        "text": "More than 24%",
-        "isCorrect": false
-      },
-      {
-        "text": "It depends on your deductions",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "insurance",
-    "difficulty": "easy",
-    "id": "IN001",
-    "question": "What is the money you pay out-of-pocket for covered losses before your insurance coverage begins to pay?",
-    "choices": [
-      {
-        "text": "Premium",
-        "isCorrect": false
-      },
-      {
-        "text": "Deductible",
-        "isCorrect": true
-      },
-      {
-        "text": "Copayment",
-        "isCorrect": false
-      },
-      {
-        "text": "Claim",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "fraud",
-    "difficulty": "medium",
-    "id": "F001",
-    "question": "What is 'phishing' in the context of financial fraud?",
-    "choices": [
-      {
-        "text": "Stealing a physical credit card",
-        "isCorrect": false
-      },
-      {
-        "text": "A type of insurance scam",
-        "isCorrect": false
-      },
-      {
-        "text": "Sending fraudulent emails to trick recipients into revealing personal information",
-        "isCorrect": true
-      },
-      {
-        "text": "Using a computer to illegally transfer money",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "investing",
-    "difficulty": "easy",
-    "id": "I002",
-    "question": "A portfolio that holds a mix of stocks, bonds, and real estate exemplifies which investment principle?",
-    "choices": [
-      {
-        "text": "Market Timing",
-        "isCorrect": false
-      },
-      {
-        "text": "Diversification",
-        "isCorrect": true
-      },
-      {
-        "text": "Dollar-Cost Averaging",
-        "isCorrect": false
-      },
-      {
-        "text": "Short Selling",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "credit",
-    "difficulty": "hard",
-    "id": "C002",
-    "question": "The Credit Utilization Ratio (CUR) is calculated as:",
-    "choices": [
-      {
-        "text": "Total Credit Limit divided by Total Debt",
-        "isCorrect": false
-      },
-      {
-        "text": "Total Credit Used divided by Total Available Credit",
-        "isCorrect": true
-      },
-      {
-        "text": "Total Number of Accounts divided by Number of Accounts with Balances",
-        "isCorrect": false
-      },
-      {
-        "text": "Total Payments Made divided by Total Payments Due",
+        "text": "Rent",
         "isCorrect": false
       }
     ]
@@ -290,95 +51,240 @@
   {
     "category": "budgeting",
     "difficulty": "medium",
-    "id": "B002",
-    "question": "The 50/30/20 budgeting rule suggests that 20% of your income should be allocated toward:",
+    "id": "B005",
+    "question": "If your income is $2,000 and your expenses total $2,200, your budget is:",
     "choices": [
       {
-        "text": "Wants (e.g., entertainment, dining out)",
+        "text": "Balanced",
         "isCorrect": false
       },
       {
-        "text": "Needs (e.g., housing, groceries)",
+        "text": "In surplus by $200",
         "isCorrect": false
       },
       {
-        "text": "Savings and debt repayment",
+        "text": "In deficit by $200",
         "isCorrect": true
       },
       {
-        "text": "Taxes and insurance",
+        "text": "In surplus by $2,200",
         "isCorrect": false
       }
     ]
   },
   {
-    "category": "debt",
-    "difficulty": "hard",
-    "id": "D002",
-    "question": "Which debt repayment strategy involves paying off the debt with the highest interest rate first, regardless of the balance?",
-    "choices": [
-      {
-        "text": "Snowball Method",
-        "isCorrect": false
-      },
-      {
-        "text": "Avalanche Method",
-        "isCorrect": true
-      },
-      {
-        "text": "Minimum Payment Method",
-        "isCorrect": false
-      },
-      {
-        "text": "Pro-rata Method",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "category": "retirement",
-    "difficulty": "easy",
-    "id": "R002",
-    "question": "What is the term for an employer's contribution to an employee's 401(k) plan, often conditional on the employee contributing a minimum amount?",
-    "choices": [
-      {
-        "text": "Vesting",
-        "isCorrect": false
-      },
-      {
-        "text": "Withdrawal",
-        "isCorrect": false
-      },
-      {
-        "text": "Tax deferral",
-        "isCorrect": false
-      },
-      {
-        "text": "Matching contribution",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "category": "taxes",
+    "category": "budgeting",
     "difficulty": "medium",
-    "id": "T002",
-    "question": "A tax deduction reduces your **taxable income**, while a tax credit directly reduces your:",
+    "id": "B006",
+    "question": "In a zero-based budget, the goal is for:",
     "choices": [
       {
-        "text": "Adjusted Gross Income (AGI)",
-        "isCorrect": false
-      },
-      {
-        "text": "Marginal tax rate",
-        "isCorrect": false
-      },
-      {
-        "text": "Total tax owed (tax liability)",
+        "text": "Income minus expenses to equal zero",
         "isCorrect": true
       },
       {
-        "text": "W-2 earnings",
+        "text": "Expenses to always be less than half of income",
+        "isCorrect": false
+      },
+      {
+        "text": "Savings to be zero",
+        "isCorrect": false
+      },
+      {
+        "text": "Debt payments to be zero",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "id": "B007",
+    "question": "Which of these is an example of 'paying yourself first' in a budget?",
+    "choices": [
+      {
+        "text": "Buying groceries before paying rent",
+        "isCorrect": false
+      },
+      {
+        "text": "Saving or investing a set amount as soon as you get paid",
+        "isCorrect": true
+      },
+      {
+        "text": "Paying all bills at the end of the month",
+        "isCorrect": false
+      },
+      {
+        "text": "Only saving leftover cash at the end of the month",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "hard",
+    "id": "B008",
+    "question": "Which budgeting approach focuses on aligning spending with your personal values and priorities?",
+    "choices": [
+      {
+        "text": "Incremental budgeting",
+        "isCorrect": false
+      },
+      {
+        "text": "Value-based budgeting",
+        "isCorrect": true
+      },
+      {
+        "text": "Line-item budgeting",
+        "isCorrect": false
+      },
+      {
+        "text": "Static budgeting",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "hard",
+    "id": "B009",
+    "question": "In budgeting, 'opportunity cost' refers to:",
+    "choices": [
+      {
+        "text": "The cost of paying late fees",
+        "isCorrect": false
+      },
+      {
+        "text": "The cost of borrowing money",
+        "isCorrect": false
+      },
+      {
+        "text": "The value of the next best alternative you give up when you make a choice",
+        "isCorrect": true
+      },
+      {
+        "text": "The difference between fixed and variable expenses",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "id": "B010",
+    "question": "Tracking your daily spending is most helpful for identifying:",
+    "choices": [
+      {
+        "text": "Your credit score",
+        "isCorrect": false
+      },
+      {
+        "text": "Your investment returns",
+        "isCorrect": false
+      },
+      {
+        "text": "Where small purchases are adding up",
+        "isCorrect": true
+      },
+      {
+        "text": "Your tax bracket",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "id": "B011",
+    "question": "If your rent increases by 10%, what should you do first in your budget?",
+    "choices": [
+      {
+        "text": "Ignore the change and keep spending the same",
+        "isCorrect": false
+      },
+      {
+        "text": "Increase your income estimate",
+        "isCorrect": false
+      },
+      {
+        "text": "Adjust other spending categories to keep the budget balanced",
+        "isCorrect": true
+      },
+      {
+        "text": "Close your bank account",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "hard",
+    "id": "B012",
+    "question": "Which of the following best describes a 'sinking fund' in budgeting?",
+    "choices": [
+      {
+        "text": "A fund used only for emergencies",
+        "isCorrect": false
+      },
+      {
+        "text": "Money set aside over time for a known future expense, like car repairs or a vacation",
+        "isCorrect": true
+      },
+      {
+        "text": "A savings account with no specific purpose",
+        "isCorrect": false
+      },
+      {
+        "text": "A fund used to pay off old debt",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "id": "S003",
+    "question": "Which of the following is a good short-term savings goal?",
+    "choices": [
+      {
+        "text": "Saving for next month’s rent deposit",
+        "isCorrect": true
+      },
+      {
+        "text": "Saving for retirement at age 65",
+        "isCorrect": false
+      },
+      {
+        "text": "Paying off a 30-year mortgage",
+        "isCorrect": false
+      },
+      {
+        "text": "Building investment real estate",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "id": "S004",
+    "question": "Where is the safest place to keep an emergency fund?",
+    "choices": [
+      {
+        "text": "Under your mattress",
+        "isCorrect": false
+      },
+      {
+        "text": "In a high-yield savings account",
+        "isCorrect": true
+      },
+      {
+        "text": "In a risky stock",
+        "isCorrect": false
+      },
+      {
+        "text": "In lottery tickets",
         "isCorrect": false
       }
     ]
@@ -386,47 +292,288 @@
   {
     "category": "saving",
     "difficulty": "medium",
-    "id": "S002",
-    "question": "The concept where the interest you earn also begins to earn interest is known as:",
+    "id": "S005",
+    "question": "A common recommendation for an emergency fund is to cover:",
+    "choices": [
+      {
+        "text": "1 week of living expenses",
+        "isCorrect": false
+      },
+      {
+        "text": "3–6 months of living expenses",
+        "isCorrect": true
+      },
+      {
+        "text": "10 years of income",
+        "isCorrect": false
+      },
+      {
+        "text": "Only your rent payment",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "id": "S006",
+    "question": "Automating transfers from checking to savings each payday mainly helps with:",
+    "choices": [
+      {
+        "text": "Market timing",
+        "isCorrect": false
+      },
+      {
+        "text": "Avoiding ATM fees",
+        "isCorrect": false
+      },
+      {
+        "text": "Building savings consistently without relying on willpower",
+        "isCorrect": true
+      },
+      {
+        "text": "Improving your credit score directly",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "id": "S007",
+    "question": "If inflation is higher than the interest rate on your savings account, then over time your:",
+    "choices": [
+      {
+        "text": "Real purchasing power decreases",
+        "isCorrect": true
+      },
+      {
+        "text": "Real purchasing power increases",
+        "isCorrect": false
+      },
+      {
+        "text": "Savings are unaffected",
+        "isCorrect": false
+      },
+      {
+        "text": "Bank will close your account",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "id": "S008",
+    "question": "Which account type is typically designed for long-term education savings with possible tax advantages?",
+    "choices": [
+      {
+        "text": "Certificate of deposit (CD)",
+        "isCorrect": false
+      },
+      {
+        "text": "529 plan",
+        "isCorrect": true
+      },
+      {
+        "text": "Money market checking",
+        "isCorrect": false
+      },
+      {
+        "text": "Regular brokerage margin account",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "id": "S009",
+    "question": "Which habit is most likely to help you save more money over time?",
+    "choices": [
+      {
+        "text": "Checking your balance once per year",
+        "isCorrect": false
+      },
+      {
+        "text": "Saving whatever is left at the end of the month",
+        "isCorrect": false
+      },
+      {
+        "text": "Setting a specific monthly savings goal and tracking progress",
+        "isCorrect": true
+      },
+      {
+        "text": "Keeping all your money in cash",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "id": "S010",
+    "question": "A 'Certificate of Deposit' (CD) usually requires you to:",
+    "choices": [
+      {
+        "text": "Deposit money and keep it there for a fixed term in exchange for a set interest rate",
+        "isCorrect": true
+      },
+      {
+        "text": "Make unlimited withdrawals without penalties",
+        "isCorrect": false
+      },
+      {
+        "text": "Invest directly in the stock market",
+        "isCorrect": false
+      },
+      {
+        "text": "Use the funds only for education",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "id": "S011",
+    "question": "Which of the following best describes 'pay yourself first' in the context of saving?",
+    "choices": [
+      {
+        "text": "Paying your largest bill first each month",
+        "isCorrect": false
+      },
+      {
+        "text": "Spending on wants before needs",
+        "isCorrect": false
+      },
+      {
+        "text": "Treating savings like a non-negotiable bill you pay every month",
+        "isCorrect": true
+      },
+      {
+        "text": "Saving only bonuses and gifts",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "id": "S012",
+    "question": "If you save $100 per month at an annual return of 6% compounded monthly, the growth over many years is mainly due to:",
     "choices": [
       {
         "text": "Simple interest",
         "isCorrect": false
       },
       {
-        "text": "Annual Percentage Yield (APY)",
-        "isCorrect": false
-      },
-      {
-        "text": "Compounding",
+        "text": "Compounding returns on both your contributions and past interest",
         "isCorrect": true
       },
       {
-        "text": "Inflation",
+        "text": "Bank fees",
+        "isCorrect": false
+      },
+      {
+        "text": "Tax refunds",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "category": "banking",
+    "difficulty": "easy",
+    "id": "BA003",
+    "question": "Which banking product is designed primarily for everyday transactions like paying bills and using a debit card?",
+    "choices": [
+      {
+        "text": "Checking account",
+        "isCorrect": true
+      },
+      {
+        "text": "Certificate of deposit (CD)",
+        "isCorrect": false
+      },
+      {
+        "text": "Mortgage",
+        "isCorrect": false
+      },
+      {
+        "text": "Auto loan",
         "isCorrect": false
       }
     ]
   },
   {
-    "category": "insurance",
-    "difficulty": "hard",
-    "id": "IN002",
-    "question": "Which type of life insurance covers you for a specific period of time and typically does not build cash value?",
+    "category": "banking",
+    "difficulty": "medium",
+    "id": "BA004",
+    "question": "A bank 'overdraft' usually occurs when:",
     "choices": [
       {
-        "text": "Whole Life",
+        "text": "You deposit more than your balance",
         "isCorrect": false
       },
       {
-        "text": "Universal Life",
-        "isCorrect": false
-      },
-      {
-        "text": "Term Life",
+        "text": "You withdraw or spend more money than is available in your account",
         "isCorrect": true
       },
       {
-        "text": "Variable Life",
+        "text": "Your paycheck is delayed",
+        "isCorrect": false
+      },
+      {
+        "text": "You close your account",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "banking",
+    "difficulty": "medium",
+    "id": "BA005",
+    "question": "Which of the following is a common benefit of using online banking?",
+    "choices": [
+      {
+        "text": "Guaranteed higher investment returns",
+        "isCorrect": false
+      },
+      {
+        "text": "Ability to track transactions and pay bills electronically",
+        "isCorrect": true
+      },
+      {
+        "text": "Unlimited free overdrafts",
+        "isCorrect": false
+      },
+      {
+        "text": "Automatic debt forgiveness",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "banking",
+    "difficulty": "hard",
+    "id": "BA006",
+    "question": "An 'APY' (Annual Percentage Yield) on a savings account represents:",
+    "choices": [
+      {
+        "text": "The simple interest rate without compounding",
+        "isCorrect": false
+      },
+      {
+        "text": "The interest rate including the effects of compounding over a year",
+        "isCorrect": true
+      },
+      {
+        "text": "Your credit score",
+        "isCorrect": false
+      },
+      {
+        "text": "The bank’s profit margin",
         "isCorrect": false
       }
     ]
@@ -434,47 +581,1517 @@
   {
     "category": "banking",
     "difficulty": "easy",
-    "id": "BA002",
-    "question": "What is the primary difference between a checking account and a savings account?",
+    "id": "BA007",
+    "question": "A debit card is directly linked to your:",
     "choices": [
       {
-        "text": "Checking accounts offer higher interest rates.",
+        "text": "Investment account",
         "isCorrect": false
       },
       {
-        "text": "Savings accounts are used for day-to-day transactions and spending.",
-        "isCorrect": false
-      },
-      {
-        "text": "Checking accounts are for daily transactions; savings accounts are for storing and growing funds.",
+        "text": "Checking account",
         "isCorrect": true
       },
       {
-        "text": "Only checking accounts are covered by FDIC insurance.",
+        "text": "Mortgage account",
+        "isCorrect": false
+      },
+      {
+        "text": "Retirement account",
         "isCorrect": false
       }
     ]
   },
   {
-    "category": "fraud",
-    "difficulty": "hard",
-    "id": "F002",
-    "question": "What financial scam is characterized by paying off old investors with money collected from new investors, rather than actual profit?",
+    "category": "banking",
+    "difficulty": "medium",
+    "id": "BA008",
+    "question": "Which of the following banking fees is most likely charged for using an out-of-network ATM?",
     "choices": [
       {
-        "text": "Pyramid Scheme",
+        "text": "Overdraft fee",
         "isCorrect": false
       },
       {
-        "text": "Ponzi Scheme",
+        "text": "Foreign transaction fee",
+        "isCorrect": false
+      },
+      {
+        "text": "ATM surcharge fee",
         "isCorrect": true
       },
       {
-        "text": "Pump-and-Dump Scheme",
+        "text": "Late payment fee",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "banking",
+    "difficulty": "hard",
+    "id": "BA009",
+    "question": "A 'credit union' is different from a traditional bank mainly because:",
+    "choices": [
+      {
+        "text": "It is a for-profit corporation owned by outside investors",
         "isCorrect": false
       },
       {
-        "text": "Advance-Fee Fraud",
+        "text": "It is a nonprofit, member-owned financial cooperative",
+        "isCorrect": true
+      },
+      {
+        "text": "It cannot offer checking accounts",
+        "isCorrect": false
+      },
+      {
+        "text": "It is not regulated",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "banking",
+    "difficulty": "medium",
+    "id": "BA010",
+    "question": "Mobile check deposit typically requires you to:",
+    "choices": [
+      {
+        "text": "Mail the check to the bank",
+        "isCorrect": false
+      },
+      {
+        "text": "Deposit cash first",
+        "isCorrect": false
+      },
+      {
+        "text": "Take photos of the front and back of the check in your banking app",
+        "isCorrect": true
+      },
+      {
+        "text": "Visit an ATM in person",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "banking",
+    "difficulty": "hard",
+    "id": "BA011",
+    "question": "Which of the following is the best way to avoid monthly maintenance fees on a checking account?",
+    "choices": [
+      {
+        "text": "Using overdraft protection frequently",
+        "isCorrect": false
+      },
+      {
+        "text": "Maintaining the required minimum balance or setting up qualifying direct deposits",
+        "isCorrect": true
+      },
+      {
+        "text": "Writing more checks per month",
+        "isCorrect": false
+      },
+      {
+        "text": "Only using credit cards",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "banking",
+    "difficulty": "easy",
+    "id": "BA012",
+    "question": "Which of the following is a common feature of a savings account but NOT usually of cash stored at home?",
+    "choices": [
+      {
+        "text": "Interest earned on your balance",
+        "isCorrect": true
+      },
+      {
+        "text": "Immediate physical access 24/7",
+        "isCorrect": false
+      },
+      {
+        "text": "No account number",
+        "isCorrect": false
+      },
+      {
+        "text": "No record of deposits",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "category": "credit",
+    "difficulty": "easy",
+    "id": "C003",
+    "question": "Which of the following is an example of using 'credit'?",
+    "choices": [
+      {
+        "text": "Paying cash for groceries",
+        "isCorrect": false
+      },
+      {
+        "text": "Using a credit card to buy a laptop and paying later",
+        "isCorrect": true
+      },
+      {
+        "text": "Depositing money into savings",
+        "isCorrect": false
+      },
+      {
+        "text": "Receiving a paycheck",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "id": "C004",
+    "question": "Which action is MOST likely to improve your credit score over time?",
+    "choices": [
+      {
+        "text": "Consistently paying at least the minimum on time every month",
+        "isCorrect": true
+      },
+      {
+        "text": "Closing your oldest credit card",
+        "isCorrect": false
+      },
+      {
+        "text": "Maxing out your credit cards each month",
+        "isCorrect": false
+      },
+      {
+        "text": "Applying for several new cards at once",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "id": "C005",
+    "question": "Keeping your credit utilization ratio below which percentage is often recommended?",
+    "choices": [
+      {
+        "text": "10%",
+        "isCorrect": false
+      },
+      {
+        "text": "30%",
+        "isCorrect": true
+      },
+      {
+        "text": "70%",
+        "isCorrect": false
+      },
+      {
+        "text": "100%",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "id": "C006",
+    "question": "A 'hard inquiry' on your credit report usually occurs when:",
+    "choices": [
+      {
+        "text": "You check your own credit score",
+        "isCorrect": false
+      },
+      {
+        "text": "A lender reviews your credit for a new credit application",
+        "isCorrect": true
+      },
+      {
+        "text": "You receive a marketing offer in the mail",
+        "isCorrect": false
+      },
+      {
+        "text": "Your employer runs a background check",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "easy",
+    "id": "C007",
+    "question": "Which of these is a potential consequence of missing multiple credit card payments?",
+    "choices": [
+      {
+        "text": "Higher credit score",
+        "isCorrect": false
+      },
+      {
+        "text": "Late fees and possible damage to your credit score",
+        "isCorrect": true
+      },
+      {
+        "text": "Automatic loan forgiveness",
+        "isCorrect": false
+      },
+      {
+        "text": "Lower interest rate",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "id": "C008",
+    "question": "Which item does NOT typically appear on a credit report?",
+    "choices": [
+      {
+        "text": "Your payment history on loans and credit cards",
+        "isCorrect": false
+      },
+      {
+        "text": "Public records such as bankruptcies",
+        "isCorrect": false
+      },
+      {
+        "text": "Your medical records and diagnoses",
+        "isCorrect": true
+      },
+      {
+        "text": "The amount you owe on credit accounts",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "id": "C009",
+    "question": "Which of the following is generally TRUE about store credit cards?",
+    "choices": [
+      {
+        "text": "They never report to credit bureaus",
+        "isCorrect": false
+      },
+      {
+        "text": "They often have higher interest rates but may offer store-specific discounts",
+        "isCorrect": true
+      },
+      {
+        "text": "They can only hurt your credit score",
+        "isCorrect": false
+      },
+      {
+        "text": "They are illegal in most states",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "id": "C010",
+    "question": "If your credit card has a $2,000 limit and you carry a $1,500 balance, your utilization on that card is:",
+    "choices": [
+      {
+        "text": "15%",
+        "isCorrect": false
+      },
+      {
+        "text": "25%",
+        "isCorrect": false
+      },
+      {
+        "text": "75%",
+        "isCorrect": true
+      },
+      {
+        "text": "150%",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "id": "C011",
+    "question": "Which of these is the BEST reason to dispute an item on your credit report?",
+    "choices": [
+      {
+        "text": "You do not like the lender’s logo",
+        "isCorrect": false
+      },
+      {
+        "text": "You believe the account or late payment information is inaccurate or fraudulent",
+        "isCorrect": true
+      },
+      {
+        "text": "You wish the interest rate were lower",
+        "isCorrect": false
+      },
+      {
+        "text": "You closed the account voluntarily",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "easy",
+    "id": "C012",
+    "question": "Which of the following actions can help you establish credit history if you have none?",
+    "choices": [
+      {
+        "text": "Opening a secured credit card and using it responsibly",
+        "isCorrect": true
+      },
+      {
+        "text": "Only using cash forever",
+        "isCorrect": false
+      },
+      {
+        "text": "Ignoring all credit offers",
+        "isCorrect": false
+      },
+      {
+        "text": "Maxing out a new card immediately",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "id": "D003",
+    "question": "Which of the following is an example of 'good debt' when used wisely?",
+    "choices": [
+      {
+        "text": "High-interest payday loan",
+        "isCorrect": false
+      },
+      {
+        "text": "Credit card debt for luxury items",
+        "isCorrect": false
+      },
+      {
+        "text": "Student loan that increases your earning potential",
+        "isCorrect": true
+      },
+      {
+        "text": "Loan from a friend you never plan to repay",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "id": "D004",
+    "question": "Making only the minimum payment on a credit card each month will:",
+    "choices": [
+      {
+        "text": "Pay off the balance very quickly",
+        "isCorrect": false
+      },
+      {
+        "text": "Reduce interest charges",
+        "isCorrect": false
+      },
+      {
+        "text": "Keep you current but cause you to pay more interest over time",
+        "isCorrect": true
+      },
+      {
+        "text": "Increase your credit limit automatically",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "id": "D005",
+    "question": "Debt consolidation generally means:",
+    "choices": [
+      {
+        "text": "Opening many small loans instead of one large loan",
+        "isCorrect": false
+      },
+      {
+        "text": "Combining multiple debts into a single loan, often with one payment",
+        "isCorrect": true
+      },
+      {
+        "text": "Ignoring all creditors",
+        "isCorrect": false
+      },
+      {
+        "text": "Paying off debts using only cash",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "hard",
+    "id": "D006",
+    "question": "With the 'debt snowball' method, you typically:",
+    "choices": [
+      {
+        "text": "Pay extra on the highest-interest debt first",
+        "isCorrect": false
+      },
+      {
+        "text": "Pay extra on the smallest-balance debt first",
+        "isCorrect": true
+      },
+      {
+        "text": "Stop making minimum payments",
+        "isCorrect": false
+      },
+      {
+        "text": "Only pay debts that are already in collections",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "id": "D007",
+    "question": "Which of the following is a secured loan?",
+    "choices": [
+      {
+        "text": "Credit card",
+        "isCorrect": false
+      },
+      {
+        "text": "Payday loan",
+        "isCorrect": false
+      },
+      {
+        "text": "Auto loan where the car is collateral",
+        "isCorrect": true
+      },
+      {
+        "text": "Personal loan with no collateral",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "id": "D008",
+    "question": "If you default on a secured loan, the lender may:",
+    "choices": [
+      {
+        "text": "Increase your credit score",
+        "isCorrect": false
+      },
+      {
+        "text": "Seize the collateral used to secure the loan",
+        "isCorrect": true
+      },
+      {
+        "text": "Give you a bonus",
+        "isCorrect": false
+      },
+      {
+        "text": "Erase your debt automatically",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "hard",
+    "id": "D009",
+    "question": "Capitalized interest on a student loan means:",
+    "choices": [
+      {
+        "text": "Interest is forgiven each month",
+        "isCorrect": false
+      },
+      {
+        "text": "Unpaid interest is added to the principal balance, causing future interest to be charged on a higher amount",
+        "isCorrect": true
+      },
+      {
+        "text": "You pay interest only in the first year",
+        "isCorrect": false
+      },
+      {
+        "text": "You no longer owe interest",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "id": "D010",
+    "question": "Which is generally the most expensive type of consumer debt in terms of interest rates?",
+    "choices": [
+      {
+        "text": "Federal student loans",
+        "isCorrect": false
+      },
+      {
+        "text": "Mortgage loans",
+        "isCorrect": false
+      },
+      {
+        "text": "Credit card debt",
+        "isCorrect": true
+      },
+      {
+        "text": "Auto loans",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "id": "D011",
+    "question": "One sign that you may be in problematic debt is:",
+    "choices": [
+      {
+        "text": "You pay your balance in full every month",
+        "isCorrect": false
+      },
+      {
+        "text": "You borrow more money to make minimum payments on other debts",
+        "isCorrect": true
+      },
+      {
+        "text": "You track your due dates in a calendar",
+        "isCorrect": false
+      },
+      {
+        "text": "You review your statements monthly",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "hard",
+    "id": "D012",
+    "question": "When considering paying off debt vs. investing, which is generally TRUE for high-interest credit card debt?",
+    "choices": [
+      {
+        "text": "Paying it off first often provides a guaranteed 'return' equal to the interest rate saved",
+        "isCorrect": true
+      },
+      {
+        "text": "Investing is always better regardless of interest rate",
+        "isCorrect": false
+      },
+      {
+        "text": "Debt never affects financial goals",
+        "isCorrect": false
+      },
+      {
+        "text": "You should always ignore interest rates",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "id": "I003",
+    "question": "Owning a 'share' of stock means you:",
+    "choices": [
+      {
+        "text": "Are lending money to the company",
+        "isCorrect": false
+      },
+      {
+        "text": "Own a small piece of the company",
+        "isCorrect": true
+      },
+      {
+        "text": "Have a guaranteed profit",
+        "isCorrect": false
+      },
+      {
+        "text": "Can withdraw company cash at any time",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "id": "I004",
+    "question": "A bond is best described as:",
+    "choices": [
+      {
+        "text": "An ownership share in a company",
+        "isCorrect": false
+      },
+      {
+        "text": "A loan you make to a government or company in exchange for interest payments",
+        "isCorrect": true
+      },
+      {
+        "text": "A type of savings account",
+        "isCorrect": false
+      },
+      {
+        "text": "A type of credit card",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "id": "I005",
+    "question": "An index fund is:",
+    "choices": [
+      {
+        "text": "A fund that tries to beat the market with frequent trading",
+        "isCorrect": false
+      },
+      {
+        "text": "A fund that aims to match the performance of a specific market index, like the S&P 500",
+        "isCorrect": true
+      },
+      {
+        "text": "A savings account with fixed interest",
+        "isCorrect": false
+      },
+      {
+        "text": "Another name for a certificate of deposit",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "easy",
+    "id": "I006",
+    "question": "Which statement about risk and return is generally TRUE?",
+    "choices": [
+      {
+        "text": "Higher potential returns usually come with higher risk",
+        "isCorrect": true
+      },
+      {
+        "text": "Higher returns always come with no risk",
+        "isCorrect": false
+      },
+      {
+        "text": "Low-risk investments always lose money",
+        "isCorrect": false
+      },
+      {
+        "text": "Risk and return are unrelated",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "id": "I007",
+    "question": "Which investment is typically considered the LEAST risky over the long term?",
+    "choices": [
+      {
+        "text": "Single company stock",
+        "isCorrect": false
+      },
+      {
+        "text": "Cryptocurrency",
+        "isCorrect": false
+      },
+      {
+        "text": "A diversified index fund",
+        "isCorrect": true
+      },
+      {
+        "text": "Options contracts",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "id": "I008",
+    "question": "Dollar-cost averaging involves:",
+    "choices": [
+      {
+        "text": "Investing a fixed amount of money on a regular schedule regardless of market price",
+        "isCorrect": true
+      },
+      {
+        "text": "Investing only when the market is at all-time highs",
+        "isCorrect": false
+      },
+      {
+        "text": "Predicting the exact bottom of the market",
+        "isCorrect": false
+      },
+      {
+        "text": "Borrowing money to invest",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "id": "I009",
+    "question": "The main purpose of diversification in a portfolio is to:",
+    "choices": [
+      {
+        "text": "Maximize taxes",
+        "isCorrect": false
+      },
+      {
+        "text": "Reduce risk by spreading investments across many assets",
+        "isCorrect": true
+      },
+      {
+        "text": "Invest only in one sector",
+        "isCorrect": false
+      },
+      {
+        "text": "Guarantee profit every year",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "easy",
+    "id": "I010",
+    "question": "Which of the following is a long-term investing goal?",
+    "choices": [
+      {
+        "text": "Saving for a weekend trip",
+        "isCorrect": false
+      },
+      {
+        "text": "Saving for retirement 30 years from now",
+        "isCorrect": true
+      },
+      {
+        "text": "Paying this month’s cell phone bill",
+        "isCorrect": false
+      },
+      {
+        "text": "Buying groceries for the week",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "id": "I011",
+    "question": "Rebalancing a portfolio means:",
+    "choices": [
+      {
+        "text": "Selling all investments and starting over",
+        "isCorrect": false
+      },
+      {
+        "text": "Adjusting your portfolio back to your target mix of assets (like 60% stocks, 40% bonds)",
+        "isCorrect": true
+      },
+      {
+        "text": "Only buying more of what has gone up",
+        "isCorrect": false
+      },
+      {
+        "text": "Switching entirely into cash",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "id": "I012",
+    "question": "In investing, 'time in the market' is often considered more important than:",
+    "choices": [
+      {
+        "text": "Diversification",
+        "isCorrect": false
+      },
+      {
+        "text": "Paying taxes",
+        "isCorrect": false
+      },
+      {
+        "text": "Trying to perfectly time market highs and lows",
+        "isCorrect": true
+      },
+      {
+        "text": "Understanding fees",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "category": "retirement",
+    "difficulty": "easy",
+    "id": "R003",
+    "question": "What is the main purpose of a retirement account?",
+    "choices": [
+      {
+        "text": "To save for short vacations",
+        "isCorrect": false
+      },
+      {
+        "text": "To build money for living expenses after you stop working",
+        "isCorrect": true
+      },
+      {
+        "text": "To pay current monthly bills",
+        "isCorrect": false
+      },
+      {
+        "text": "To fund a checking account",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "medium",
+    "id": "R004",
+    "question": "Which of the following is a common advantage of employer-sponsored retirement plans like a 401(k)?",
+    "choices": [
+      {
+        "text": "Unlimited withdrawals without penalty at any time",
+        "isCorrect": false
+      },
+      {
+        "text": "Possible employer matching contributions",
+        "isCorrect": true
+      },
+      {
+        "text": "Guaranteed 15% return",
+        "isCorrect": false
+      },
+      {
+        "text": "No need to invest the money",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "hard",
+    "id": "R005",
+    "question": "Taking money out of many retirement accounts before age 59½ often results in:",
+    "choices": [
+      {
+        "text": "A bonus from the IRS",
+        "isCorrect": false
+      },
+      {
+        "text": "No taxes or penalties",
+        "isCorrect": false
+      },
+      {
+        "text": "Taxes plus possible early withdrawal penalties",
+        "isCorrect": true
+      },
+      {
+        "text": "Automatic debt cancellation",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "medium",
+    "id": "R006",
+    "question": "The main tax advantage of a traditional 401(k) or traditional IRA is that:",
+    "choices": [
+      {
+        "text": "Contributions are always tax-free at withdrawal",
+        "isCorrect": false
+      },
+      {
+        "text": "Contributions may be tax-deductible now, and you pay taxes later on withdrawals",
+        "isCorrect": true
+      },
+      {
+        "text": "You never pay taxes on contributions or withdrawals",
+        "isCorrect": false
+      },
+      {
+        "text": "They increase your credit score",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "hard",
+    "id": "R007",
+    "question": "Which factor is typically MOST important in building a large retirement balance?",
+    "choices": [
+      {
+        "text": "Starting early and letting compound growth work over time",
+        "isCorrect": true
+      },
+      {
+        "text": "Waiting until your 50s to start",
+        "isCorrect": false
+      },
+      {
+        "text": "Frequent trading based on news headlines",
+        "isCorrect": false
+      },
+      {
+        "text": "Taking on maximum possible risk",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "medium",
+    "id": "R008",
+    "question": "Which account type is often available to self-employed individuals for retirement savings?",
+    "choices": [
+      {
+        "text": "SEP IRA",
+        "isCorrect": true
+      },
+      {
+        "text": "529 plan",
+        "isCorrect": false
+      },
+      {
+        "text": "Health savings account (HSA)",
+        "isCorrect": false
+      },
+      {
+        "text": "Flexible spending account (FSA)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "easy",
+    "id": "R009",
+    "question": "Social Security benefits are designed to provide:",
+    "choices": [
+      {
+        "text": "All the money you will ever need in retirement",
+        "isCorrect": false
+      },
+      {
+        "text": "A basic income foundation in retirement, not usually your entire income",
+        "isCorrect": true
+      },
+      {
+        "text": "Short-term emergency loans",
+        "isCorrect": false
+      },
+      {
+        "text": "Health insurance for pets",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "medium",
+    "id": "R010",
+    "question": "If your employer offers a 401(k) match up to 4% of your salary, what is usually the smartest minimum contribution?",
+    "choices": [
+      {
+        "text": "0%, so you have more cash now",
+        "isCorrect": false
+      },
+      {
+        "text": "2%, to get part of the match",
+        "isCorrect": false
+      },
+      {
+        "text": "At least 4%, to get the full match",
+        "isCorrect": true
+      },
+      {
+        "text": "Any amount, because the match does not matter",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "hard",
+    "id": "R011",
+    "question": "Vesting in a retirement plan refers to:",
+    "choices": [
+      {
+        "text": "The process of choosing investments",
+        "isCorrect": false
+      },
+      {
+        "text": "How much of the employer contribution you are entitled to keep if you leave the job",
+        "isCorrect": true
+      },
+      {
+        "text": "Your credit score when you retire",
+        "isCorrect": false
+      },
+      {
+        "text": "The age you can retire",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "easy",
+    "id": "R012",
+    "question": "Which of the following is generally a good practice for retirement planning?",
+    "choices": [
+      {
+        "text": "Relying only on winning the lottery",
+        "isCorrect": false
+      },
+      {
+        "text": "Starting to save and invest as early as possible",
+        "isCorrect": true
+      },
+      {
+        "text": "Stopping all savings in your 20s",
+        "isCorrect": false
+      },
+      {
+        "text": "Ignoring your employer’s retirement plan",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "category": "taxes",
+    "difficulty": "easy",
+    "id": "T003",
+    "question": "Which document do employees in the U.S. typically receive from employers to summarize their annual wages and taxes withheld?",
+    "choices": [
+      {
+        "text": "W-2 form",
+        "isCorrect": true
+      },
+      {
+        "text": "1040 form",
+        "isCorrect": false
+      },
+      {
+        "text": "1099 interest form",
+        "isCorrect": false
+      },
+      {
+        "text": "Schedule C",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "medium",
+    "id": "T004",
+    "question": "Which of the following is typically considered taxable income?",
+    "choices": [
+      {
+        "text": "Lottery winnings",
+        "isCorrect": true
+      },
+      {
+        "text": "Most gifts received",
+        "isCorrect": false
+      },
+      {
+        "text": "Most scholarships used for tuition",
+        "isCorrect": false
+      },
+      {
+        "text": "Money you already paid in taxes",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "medium",
+    "id": "T005",
+    "question": "Filing your taxes electronically (e-filing) usually:",
+    "choices": [
+      {
+        "text": "Is illegal in most states",
+        "isCorrect": false
+      },
+      {
+        "text": "Can speed up processing and potential refunds",
+        "isCorrect": true
+      },
+      {
+        "text": "Always increases your tax bill",
+        "isCorrect": false
+      },
+      {
+        "text": "Eliminates the need to report income",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "hard",
+    "id": "T006",
+    "question": "A progressive tax system means that:",
+    "choices": [
+      {
+        "text": "Everyone pays the same flat rate",
+        "isCorrect": false
+      },
+      {
+        "text": "The tax rate decreases as income increases",
+        "isCorrect": false
+      },
+      {
+        "text": "Higher levels of income are taxed at higher rates",
+        "isCorrect": true
+      },
+      {
+        "text": "Only investment income is taxed",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "medium",
+    "id": "T007",
+    "question": "Which of the following could potentially reduce your tax bill?",
+    "choices": [
+      {
+        "text": "Tax credits you qualify for",
+        "isCorrect": true
+      },
+      {
+        "text": "Ignoring your tax forms",
+        "isCorrect": false
+      },
+      {
+        "text": "Under-reporting income",
+        "isCorrect": false
+      },
+      {
+        "text": "Paying bills in cash",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "hard",
+    "id": "T008",
+    "question": "Capital gains tax generally applies when you:",
+    "choices": [
+      {
+        "text": "Earn wages from a job",
+        "isCorrect": false
+      },
+      {
+        "text": "Sell an investment like a stock for more than you paid",
+        "isCorrect": true
+      },
+      {
+        "text": "Receive a birthday gift",
+        "isCorrect": false
+      },
+      {
+        "text": "Pay your rent on time",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "easy",
+    "id": "T009",
+    "question": "The deadline for filing individual income tax returns in the U.S. is usually around:",
+    "choices": [
+      {
+        "text": "April 15",
+        "isCorrect": true
+      },
+      {
+        "text": "January 1",
+        "isCorrect": false
+      },
+      {
+        "text": "July 4",
+        "isCorrect": false
+      },
+      {
+        "text": "December 31",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "medium",
+    "id": "T010",
+    "question": "If too little tax is withheld from your paycheck during the year, you will most likely:",
+    "choices": [
+      {
+        "text": "Get a larger refund",
+        "isCorrect": false
+      },
+      {
+        "text": "Owe additional taxes when you file your return",
+        "isCorrect": true
+      },
+      {
+        "text": "Never have to file taxes",
+        "isCorrect": false
+      },
+      {
+        "text": "Be automatically audited",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "hard",
+    "id": "T011",
+    "question": "Itemizing deductions instead of taking the standard deduction makes sense when:",
+    "choices": [
+      {
+        "text": "Your itemized deductions are higher than the standard deduction",
+        "isCorrect": true
+      },
+      {
+        "text": "You have no income",
+        "isCorrect": false
+      },
+      {
+        "text": "You want a simpler filing process",
+        "isCorrect": false
+      },
+      {
+        "text": "You are not eligible for any deductions",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "easy",
+    "id": "T012",
+    "question": "Which of these is a common reason people receive a tax REFUND?",
+    "choices": [
+      {
+        "text": "They paid more in taxes during the year than they actually owed",
+        "isCorrect": true
+      },
+      {
+        "text": "They never paid any taxes",
+        "isCorrect": false
+      },
+      {
+        "text": "They did not file a tax return",
+        "isCorrect": false
+      },
+      {
+        "text": "Refunds are randomly given out",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "category": "insurance",
+    "difficulty": "easy",
+    "id": "IN003",
+    "question": "The main purpose of insurance is to:",
+    "choices": [
+      {
+        "text": "Guarantee investment profits",
+        "isCorrect": false
+      },
+      {
+        "text": "Protect against financial loss from unexpected events",
+        "isCorrect": true
+      },
+      {
+        "text": "Avoid paying any out-of-pocket costs ever",
+        "isCorrect": false
+      },
+      {
+        "text": "Increase your credit score",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "id": "IN004",
+    "question": "A 'premium' is:",
+    "choices": [
+      {
+        "text": "The total cost of all your medical bills",
+        "isCorrect": false
+      },
+      {
+        "text": "The amount you pay an insurance company, usually monthly or yearly, to maintain coverage",
+        "isCorrect": true
+      },
+      {
+        "text": "The amount you pay each doctor visit after insurance",
+        "isCorrect": false
+      },
+      {
+        "text": "The money the insurance company pays you",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "id": "IN005",
+    "question": "Health insurance 'copayment' (copay) usually means:",
+    "choices": [
+      {
+        "text": "A fixed amount you pay for a service, like $20 for a doctor visit",
+        "isCorrect": true
+      },
+      {
+        "text": "The total yearly cost of insurance",
+        "isCorrect": false
+      },
+      {
+        "text": "The maximum amount insurance will pay",
+        "isCorrect": false
+      },
+      {
+        "text": "The amount before insurance pays anything",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "id": "IN006",
+    "question": "The 'out-of-pocket maximum' in a health insurance plan is:",
+    "choices": [
+      {
+        "text": "The maximum amount the insurance company will pay",
+        "isCorrect": false
+      },
+      {
+        "text": "The most you will pay in covered costs in a year before insurance covers 100% of additional covered expenses",
+        "isCorrect": true
+      },
+      {
+        "text": "The size of your monthly premium",
+        "isCorrect": false
+      },
+      {
+        "text": "The amount of your copayment",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "easy",
+    "id": "IN007",
+    "question": "Auto liability insurance mainly covers:",
+    "choices": [
+      {
+        "text": "Damage to your own car only",
+        "isCorrect": false
+      },
+      {
+        "text": "Injuries and property damage you cause to others in an accident",
+        "isCorrect": true
+      },
+      {
+        "text": "Routine oil changes",
+        "isCorrect": false
+      },
+      {
+        "text": "Wear and tear on your tires",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "id": "IN008",
+    "question": "Renters insurance typically covers:",
+    "choices": [
+      {
+        "text": "The building you live in",
+        "isCorrect": false
+      },
+      {
+        "text": "Your personal belongings and personal liability inside a rented home or apartment",
+        "isCorrect": true
+      },
+      {
+        "text": "Your landlord’s mortgage",
+        "isCorrect": false
+      },
+      {
+        "text": "Any damage you do on purpose",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "id": "IN009",
+    "question": "When choosing a higher deductible on an insurance policy, you usually:",
+    "choices": [
+      {
+        "text": "Pay a higher premium but less out of pocket if you file a claim",
+        "isCorrect": false
+      },
+      {
+        "text": "Pay a lower premium but more out of pocket before insurance pays",
+        "isCorrect": true
+      },
+      {
+        "text": "Eliminate the need for a policy",
+        "isCorrect": false
+      },
+      {
+        "text": "Guarantee full coverage for any loss",
         "isCorrect": false
       }
     ]

@@ -275,4 +275,536 @@
       }
     ]
   }
+    ,
+  {
+    "category": "Income",
+    "difficulty": "easy",
+    "question": "Money you earn from a side job or freelance work is often called _ income, while money from a full-time job is typically _ income.",
+    "blanks": [
+      {
+        "correctAnswer": "supplemental",
+        "options": ["supplemental", "passive", "unearned", "retirement"]
+      },
+      {
+        "correctAnswer": "primary",
+        "options": ["primary", "secondary", "passive", "irregular"]
+      }
+    ]
+  },
+  {
+    "category": "Income",
+    "difficulty": "medium",
+    "question": "_ pay is extra compensation for working beyond normal hours, while _ pay is a fixed amount you receive regularly, such as every two weeks.",
+    "blanks": [
+      {
+        "correctAnswer": "Overtime",
+        "options": ["Overtime", "Bonus", "Base", "Holiday"]
+      },
+      {
+        "correctAnswer": "salary",
+        "options": ["salary", "commission", "stipend", "tip"]
+      }
+    ]
+  },
+  {
+    "category": "Income",
+    "difficulty": "medium",
+    "question": "Workers who receive a _ are typically employees, while those who receive a _ are usually independent contractors.",
+    "blanks": [
+      {
+        "correctAnswer": "W-2",
+        "options": ["W-2", "1099", "W-4", "1040"]
+      },
+      {
+        "correctAnswer": "1099",
+        "options": ["1099", "W-2", "1040", "W-9"]
+      }
+    ]
+  },
+  {
+    "category": "Income",
+    "difficulty": "hard",
+    "question": "Income from interest, dividends, and capital gains is often called _ income, while wages and salaries are classified as _ income.",
+    "blanks": [
+      {
+        "correctAnswer": "investment",
+        "options": ["investment", "earned", "gross", "passive"]
+      },
+      {
+        "correctAnswer": "earned",
+        "options": ["earned", "portfolio", "passive", "unearned"]
+      }
+    ]
+  },
+  {
+    "category": "Income",
+    "difficulty": "hard",
+    "question": "When your income changes from month to month, it is called _ income, while an income that stays the same each pay period is called _ income.",
+    "blanks": [
+      {
+        "correctAnswer": "variable",
+        "options": ["variable", "fixed", "gross", "net"]
+      },
+      {
+        "correctAnswer": "fixed",
+        "options": ["fixed", "variable", "passive", "irregular"]
+      }
+    ]
+  },
+
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "question": "Expenses that stay the same each month, like rent, are called _ expenses, while those that change, like groceries, are _ expenses.",
+    "blanks": [
+      {
+        "correctAnswer": "fixed",
+        "options": ["fixed", "variable", "discretionary", "optional"]
+      },
+      {
+        "correctAnswer": "variable",
+        "options": ["variable", "fixed", "mandatory", "automatic"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "question": "In a _ budget, every dollar of income is assigned a specific job, while a more traditional _ budget may simply track spending by category.",
+    "blanks": [
+      {
+        "correctAnswer": "zero-based",
+        "options": ["zero-based", "envelope", "rolling", "incremental"]
+      },
+      {
+        "correctAnswer": "line-item",
+        "options": ["line-item", "zero-based", "cash", "annual"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "question": "Money set aside regularly for known upcoming expenses, like car repairs or holiday gifts, is often kept in a _ fund within your _.",
+    "blanks": [
+      {
+        "correctAnswer": "sinking",
+        "options": ["sinking", "emergency", "retirement", "general"]
+      },
+      {
+        "correctAnswer": "budget",
+        "options": ["budget", "loan", "credit", "bonus"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "hard",
+    "question": "A _ budget is based on last period's spending plus adjustments, while a _ budget starts from zero and justifies every expense.",
+    "blanks": [
+      {
+        "correctAnswer": "incremental",
+        "options": ["incremental", "zero-based", "flexible", "static"]
+      },
+      {
+        "correctAnswer": "zero-based",
+        "options": ["zero-based", "incremental", "rolling", "top-down"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "question": "Spending on things you must have, like housing and food, are _ expenses, while spending on things like dining out and entertainment are _ expenses.",
+    "blanks": [
+      {
+        "correctAnswer": "needs",
+        "options": ["needs", "wants", "luxuries", "extras"]
+      },
+      {
+        "correctAnswer": "wants",
+        "options": ["wants", "needs", "debts", "fees"]
+      }
+    ]
+  },
+
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "question": "Setting up an automatic transfer from checking to savings is an example of _ your savings, which helps you _ consistently.",
+    "blanks": [
+      {
+        "correctAnswer": "automating",
+        "options": ["automating", "delaying", "cancelling", "withdrawing"]
+      },
+      {
+        "correctAnswer": "save",
+        "options": ["save", "borrow", "spend", "invest recklessly"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "question": "Saving for a vacation next year is a _-term goal, while saving for retirement in 30 years is a _-term goal.",
+    "blanks": [
+      {
+        "correctAnswer": "short",
+        "options": ["short", "long", "lifetime", "instant"]
+      },
+      {
+        "correctAnswer": "long",
+        "options": ["long", "short", "medium", "immediate"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "question": "_ yourself first means treating savings like a required bill, while saving only what is left over is a _ approach.",
+    "blanks": [
+      {
+        "correctAnswer": "Paying",
+        "options": ["Paying", "Taxing", "Rewarding", "Loaning"]
+      },
+      {
+        "correctAnswer": "leftover",
+        "options": ["leftover", "planned", "automatic", "scheduled"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "question": "Money set aside for a specific future purchase, like a car or wedding, is often called a _ fund, while money set aside for unexpected events is an _ fund.",
+    "blanks": [
+      {
+        "correctAnswer": "goal",
+        "options": ["goal", "sinking", "debt", "retirement"]
+      },
+      {
+        "correctAnswer": "emergency",
+        "options": ["emergency", "vacation", "education", "discretionary"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "question": "When interest is calculated only on the original amount saved, it is _ interest, but when it is calculated on the original amount plus accumulated interest, it is _ interest.",
+    "blanks": [
+      {
+        "correctAnswer": "simple",
+        "options": ["simple", "compound", "floating", "variable"]
+      },
+      {
+        "correctAnswer": "compound",
+        "options": ["compound", "simple", "fixed", "introductory"]
+      }
+    ]
+  },
+
+  {
+    "category": "investing",
+    "difficulty": "easy",
+    "question": "Stocks represent _ in a company, while bonds represent a _ to a company or government.",
+    "blanks": [
+      {
+        "correctAnswer": "ownership",
+        "options": ["ownership", "debt", "salary", "dividend"]
+      },
+      {
+        "correctAnswer": "loan",
+        "options": ["loan", "gift", "paycheck", "tax"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "question": "_ tolerance describes how much ups and downs in investment value you can handle, while your investing _ describes how long you plan to keep the money invested.",
+    "blanks": [
+      {
+        "correctAnswer": "Risk",
+        "options": ["Risk", "Tax", "Fee", "Market"]
+      },
+      {
+        "correctAnswer": "time horizon",
+        "options": ["time horizon", "paycheck", "budget", "portfolio"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "question": "Buying and holding investments for many years is a _-term strategy, while frequently buying and selling to chase quick gains is a _ strategy.",
+    "blanks": [
+      {
+        "correctAnswer": "long",
+        "options": ["long", "short", "weekly", "daily"]
+      },
+      {
+        "correctAnswer": "trading",
+        "options": ["trading", "saving", "budgeting", "indexing"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "question": "The gain you make when you sell an investment for more than you paid is a _ gain, while selling for less than you paid results in a _ loss.",
+    "blanks": [
+      {
+        "correctAnswer": "capital",
+        "options": ["capital", "interest", "dividend", "salary"]
+      },
+      {
+        "correctAnswer": "capital",
+        "options": ["capital", "wage", "bonus", "tax"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "question": "The relationship where higher potential return usually comes with higher _ is known as the risk-_ tradeoff.",
+    "blanks": [
+      {
+        "correctAnswer": "risk",
+        "options": ["risk", "tax", "fee", "inflation"]
+      },
+      {
+        "correctAnswer": "return",
+        "options": ["return", "budget", "credit", "loan"]
+      }
+    ]
+  },
+
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "question": "The _ payment is the smallest amount you must pay on a loan or credit card each month, but paying only this usually leads to more _ over time.",
+    "blanks": [
+      {
+        "correctAnswer": "minimum",
+        "options": ["minimum", "maximum", "bonus", "final"]
+      },
+      {
+        "correctAnswer": "interest",
+        "options": ["interest", "income", "salary", "tax"]
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "question": "The _ on a loan is the percentage cost of borrowing money, while the _ is the original amount of money you borrowed.",
+    "blanks": [
+      {
+        "correctAnswer": "interest rate",
+        "options": ["interest rate", "credit limit", "fee", "term"]
+      },
+      {
+        "correctAnswer": "principal",
+        "options": ["principal", "dividend", "income", "limit"]
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "question": "_ a loan means replacing your existing loan with a new one, often at a lower rate, while _ a loan means changing terms to settle for less than the full amount.",
+    "blanks": [
+      {
+        "correctAnswer": "Refinancing",
+        "options": ["Refinancing", "Defaulting", "Skipping", "Ignoring"]
+      },
+      {
+        "correctAnswer": "settling",
+        "options": ["settling", "borrowing", "amortizing", "consolidating"]
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "hard",
+    "question": "A loan where you make equal payments over a set period until the balance is zero is called an _ loan, and the schedule of those payments is an _ schedule.",
+    "blanks": [
+      {
+        "correctAnswer": "amortizing",
+        "options": ["amortizing", "interest-only", "balloon", "revolving"]
+      },
+      {
+        "correctAnswer": "amortization",
+        "options": ["amortization", "repayment", "billing", "collection"]
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "hard",
+    "question": "Using one loan to combine multiple debts into a single payment is called debt _, while simply missing payments and ignoring creditors can lead to debt _. ",
+    "blanks": [
+      {
+        "correctAnswer": "consolidation",
+        "options": ["consolidation", "avalanche", "snowball", "refinancing"]
+      },
+      {
+        "correctAnswer": "collections",
+        "options": ["collections", "forgiveness", "relief", "suspension"]
+      }
+    ]
+  },
+
+  {
+    "category": "credit",
+    "difficulty": "easy",
+    "question": "Your _ score is a number that summarizes your credit history, while your _ report provides detailed information about your accounts and payments.",
+    "blanks": [
+      {
+        "correctAnswer": "credit",
+        "options": ["credit", "income", "budget", "tax"]
+      },
+      {
+        "correctAnswer": "credit",
+        "options": ["credit", "bank", "employment", "insurance"]
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "question": "Using a high percentage of your available credit limit results in a high credit _ ratio, which can hurt your _ score.",
+    "blanks": [
+      {
+        "correctAnswer": "utilization",
+        "options": ["utilization", "payment", "savings", "tax"]
+      },
+      {
+        "correctAnswer": "credit",
+        "options": ["credit", "salary", "budget", "retirement"]
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "question": "A _ inquiry happens when a lender checks your credit for a new application, while a _ inquiry occurs when you check your own credit.",
+    "blanks": [
+      {
+        "correctAnswer": "hard",
+        "options": ["hard", "soft", "light", "deep"]
+      },
+      {
+        "correctAnswer": "soft",
+        "options": ["soft", "hard", "strong", "none"]
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "question": "Payment _ and credit _ are two major factors that influence your overall credit score.",
+    "blanks": [
+      {
+        "correctAnswer": "history",
+        "options": ["history", "frequency", "size", "source"]
+      },
+      {
+        "correctAnswer": "utilization",
+        "options": ["utilization", "color", "category", "location"]
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "question": "A _ card requires a cash deposit as collateral, while an _ credit card does not require collateral and is based on your creditworthiness.",
+    "blanks": [
+      {
+        "correctAnswer": "secured",
+        "options": ["secured", "unsecured", "prepaid", "rewards"]
+      },
+      {
+        "correctAnswer": "unsecured",
+        "options": ["unsecured", "secured", "store", "charge"]
+      }
+    ]
+  },
+
+  {
+    "category": "insurance",
+    "difficulty": "easy",
+    "question": "Term life insurance covers you for a specific _ of time, while whole life insurance is designed to last for your _ life.",
+    "blanks": [
+      {
+        "correctAnswer": "period",
+        "options": ["period", "premium", "deductible", "claim"]
+      },
+      {
+        "correctAnswer": "whole",
+        "options": ["whole", "partial", "short", "work"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "question": "Auto insurance _ coverage pays for damage you cause to others, while _ coverage pays for damage to your own vehicle from events like theft or hail.",
+    "blanks": [
+      {
+        "correctAnswer": "liability",
+        "options": ["liability", "collision", "comprehensive", "medical"]
+      },
+      {
+        "correctAnswer": "comprehensive",
+        "options": ["comprehensive", "liability", "term", "umbrella"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "question": "A _ is a fixed amount you pay for a covered service, like a doctor's visit, while _ is the percentage of costs you pay after the deductible is met.",
+    "blanks": [
+      {
+        "correctAnswer": "copay",
+        "options": ["copay", "premium", "deductible", "rider"]
+      },
+      {
+        "correctAnswer": "coinsurance",
+        "options": ["coinsurance", "liability", "copay", "limit"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "question": "The person who owns an insurance policy is the _, while the person who receives the payout from a life insurance policy is the _.",
+    "blanks": [
+      {
+        "correctAnswer": "policyholder",
+        "options": ["policyholder", "beneficiary", "agent", "adjuster"]
+      },
+      {
+        "correctAnswer": "beneficiary",
+        "options": ["beneficiary", "policyholder", "insurer", "broker"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "question": "An _ policy provides extra liability coverage above the limits of your home and auto policies, while a _ policy specifically protects your residence and belongings.",
+    "blanks": [
+      {
+        "correctAnswer": "umbrella",
+        "options": ["umbrella", "term", "health", "collision"]
+      },
+      {
+        "correctAnswer": "homeowners",
+        "options": ["homeowners", "auto", "renters", "disability"]
+      }
+    ]
+  }
 ]
