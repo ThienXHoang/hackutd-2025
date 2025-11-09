@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="relative flex flex-col items-center justify-center h-screen w-full overflow-hidden">
+    <main className="relative flex flex-col items-center justify-end h-screen w-full overflow-hidden pb-16">
       {/* Background */}
       <Image
         src={background2}
@@ -12,7 +12,6 @@ export default function HomePage() {
         fill
         className="object-cover -z-10"
       />
-
 
       {/* Button */}
       <Link href="game">
@@ -27,8 +26,7 @@ export default function HomePage() {
              px-6 
              hover:bg-[#7c3aed]/10
              hover:text-[#6d28d9]
-             text-white
-             mt-[750px]"
+             text-white"
         >
           BEGIN YOUR QUEST
         </button>
