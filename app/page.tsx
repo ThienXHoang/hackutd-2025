@@ -1,17 +1,44 @@
-"use client";
-
+import Image from "next/image";
+import logo2 from "../public/logo2.png";
+import background from "../public/background.png";
 import Link from "next/link";
 
 export default function HomePage() {
   return (
-  <div className="flex flex-col items-center justify-center min-h-screen bg-linear-to-br from-purple-900 via-blue-900 to-indigo-900">
-      <h1 className="text-5xl font-bold mb-8 text-white">Financial Literacy Quest</h1>
-      <p className="text-xl mb-8 text-gray-300">Master the spells of finance!</p>
-      <Link href="/game">
-        <button className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-xl font-semibold shadow-lg transform hover:scale-105 transition-all">
-          🎮 Start Quest
+    <main className="relative flex flex-col items-center justify-center h-screen w-full overflow-hidden">
+      {/* Background */}
+      <Image
+        src={background}
+        alt="Background"
+        fill
+        className="object-cover -z-10"
+      />
+
+      {/* Logo */}
+      <div>
+        <Image src={logo2} alt="Spellbook Logo" width={500} height={382} />
+      </div>
+
+      {/* Subtitle */}
+      <p className="mt-2 text-center px-4 font-['Charm',_cursive] text-4xl text-white">
+        Embark on your magical quest to master savings and unlock financial
+        spells.
+      </p>
+
+      {/* Button */}
+      <Link href="game">
+        <button
+          className="mt-10 rounded-full shadow-lg transform transition-all hover:scale-105 
+                   font-['Quintessential',_cursive] 
+                   bg-[#7c3aed] 
+                   text-2xl 
+                   py-4 
+                   px-6 
+                   text-white"
+        >
+          BEGIN YOUR QUEST
         </button>
       </Link>
-    </div>
+    </main>
   );
 }
