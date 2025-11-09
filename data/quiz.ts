@@ -48,28 +48,29 @@ export const quiz: QuestionDict = (() => {
 
     if (!dict.has(category)) {
       dict.set(category, new Map([[difficulty, new Map([[id, question]])]]));
+    } else {
+      const categoryMap = dict.get(category);
+      if (!categoryMap?.has(difficulty)) {
+        categoryMap?.set(difficulty, new Map([[id, question]]));
+      } else {
+        categoryMap.get(difficulty)?.set(id, question);
+      }
     }
-
-    dict.get(category)?.get(difficulty)?.set(id, question);
   });
 
   return dict;
 })();
 
-export function getRandomCategory() {
+export function getRandomCategory(): Category {
   const categories = Object.values(Category);
-
   const randIndex = Math.floor(Math.random() * categories.length);
-
   return categories[randIndex];
 }
 
-export function getRandomQuestion(category: Category, difficulty: Difficulty) {
+export function getRandomQuestion(category: Category, difficulty: Difficulty): Question | null {
   let questionMap = quiz.get(category)?.get(difficulty);
   if (!questionMap) return null;
   let questions = Array.from(questionMap.values());
-
-  console.log(questions);
   let rand = Math.floor(Math.random() * questions.length);
   return questions[rand];
 }
