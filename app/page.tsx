@@ -17,7 +17,7 @@ export default function HomePage() {
       {/* Button */}
       <Link href="game">
         <button
-          className=""rounded-full shadow-lg transform transition-all hover:scale-105 
+          className="rounded-full shadow-lg transform transition-all hover:scale-105 
              font-['Quintessential',_cursive] 
              bg-transparent 
              text-[#7c3aed] 
