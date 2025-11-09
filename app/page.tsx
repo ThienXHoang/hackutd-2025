@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* Background */}
       <Image
         src={background}
-        alt="Background"
+        alt="background"
         fill
         className="object-cover -z-10"
       />
