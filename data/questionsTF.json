@@ -8,11 +8,40 @@
   },
   {
     "category": "budgeting",
+    "difficulty": "easy",
+    "id": "B003-TF",
+    "statement": "A budget helps track income and expenses to manage money effectively.",
+    "isTrue": true
+  },
+  {
+    "category": "budgeting",
     "difficulty": "medium",
     "id": "B002-TF",
     "statement": "According to the 50/30/20 budgeting rule, 50% of your income should go toward savings and debt repayment.",
     "isTrue": false
   },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "id": "B004-TF",
+    "statement": "Discretionary expenses are essential costs like rent and utilities.",
+    "isTrue": false
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "hard",
+    "id": "B005-TF",
+    "statement": "The envelope method involves assigning specific cash amounts for each spending category.",
+    "isTrue": true
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "hard",
+    "id": "B006-TF",
+    "statement": "Zero-based budgeting leaves some income unassigned to encourage flexibility.",
+    "isTrue": false
+  },
+
   {
     "category": "saving",
     "difficulty": "easy",
@@ -22,11 +51,40 @@
   },
   {
     "category": "saving",
+    "difficulty": "easy",
+    "id": "S003-TF",
+    "statement": "A savings account is designed to store money and earn interest over time.",
+    "isTrue": true
+  },
+  {
+    "category": "saving",
     "difficulty": "medium",
     "id": "S002-TF",
     "statement": "Compounding allows you to earn interest on both your initial deposit and the interest you’ve already earned.",
     "isTrue": true
   },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "id": "S004-TF",
+    "statement": "A certificate of deposit (CD) allows unlimited withdrawals without penalty.",
+    "isTrue": false
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "id": "S005-TF",
+    "statement": "High-yield savings accounts typically offer higher interest rates than traditional savings accounts.",
+    "isTrue": true
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "id": "S006-TF",
+    "statement": "Inflation increases the purchasing power of your savings over time.",
+    "isTrue": false
+  },
+
   {
     "category": "banking",
     "difficulty": "easy",
@@ -36,9 +94,52 @@
   },
   {
     "category": "banking",
+    "difficulty": "easy",
+    "id": "BA003-TF",
+    "statement": "An ATM allows cash withdrawals and deposits using a debit card.",
+    "isTrue": true
+  },
+  {
+    "category": "banking",
     "difficulty": "medium",
     "id": "BA002-TF",
     "statement": "FDIC insurance protects your investment portfolio from stock market losses.",
+    "isTrue": false
+  },
+  {
+    "category": "banking",
+    "difficulty": "medium",
+    "id": "BA004-TF",
+    "statement": "Online banks often provide higher interest rates due to lower overhead costs.",
+    "isTrue": true
+  },
+  {
+    "category": "banking",
+    "difficulty": "hard",
+    "id": "BA005-TF",
+    "statement": "The routing number identifies your specific account at a bank.",
+    "isTrue": false
+  },
+  {
+    "category": "banking",
+    "difficulty": "hard",
+    "id": "BA006-TF",
+    "statement": "The Truth in Savings Act requires banks to disclose fees and interest rates clearly to consumers.",
+    "isTrue": true
+  },
+
+  {
+    "category": "credit",
+    "difficulty": "easy",
+    "id": "C003-TF",
+    "statement": "A credit card allows you to borrow money up to a set limit for purchases.",
+    "isTrue": true
+  },
+  {
+    "category": "credit",
+    "difficulty": "easy",
+    "id": "C004-TF",
+    "statement": "Paying only the minimum balance on your credit card helps you avoid all interest charges.",
     "isTrue": false
   },
   {
@@ -50,11 +151,26 @@
   },
   {
     "category": "credit",
+    "difficulty": "medium",
+    "id": "C005-TF",
+    "statement": "A hard inquiry can temporarily lower your credit score.",
+    "isTrue": true
+  },
+  {
+    "category": "credit",
     "difficulty": "hard",
     "id": "C002-TF",
     "statement": "A higher Credit Utilization Ratio can help increase your credit score.",
     "isTrue": false
   },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "id": "C006-TF",
+    "statement": "Closing an old credit card always improves your credit score.",
+    "isTrue": false
+  },
+
   {
     "category": "debt",
     "difficulty": "easy",
@@ -64,16 +180,66 @@
   },
   {
     "category": "debt",
+    "difficulty": "easy",
+    "id": "D003-TF",
+    "statement": "Borrowing money means you are taking on debt that must be repaid with interest.",
+    "isTrue": true
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "id": "D004-TF",
+    "statement": "The debt snowball method focuses on paying off the smallest balance first.",
+    "isTrue": true
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "id": "D005-TF",
+    "statement": "A loan’s annual percentage rate (APR) includes both interest and fees.",
+    "isTrue": true
+  },
+  {
+    "category": "debt",
     "difficulty": "hard",
     "id": "D002-TF",
     "statement": "The Avalanche Method focuses on paying off debts with the highest interest rate first.",
     "isTrue": true
   },
   {
+    "category": "debt",
+    "difficulty": "hard",
+    "id": "D006-TF",
+    "statement": "Defaulting on a loan will not affect your credit score if you repay it later.",
+    "isTrue": false
+  },
+
+  {
     "category": "investing",
     "difficulty": "easy",
     "id": "I001-TF",
     "statement": "Diversification reduces investment risk by spreading money across different asset types.",
+    "isTrue": true
+  },
+  {
+    "category": "investing",
+    "difficulty": "easy",
+    "id": "I003-TF",
+    "statement": "Stocks represent ownership in a company.",
+    "isTrue": true
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "id": "I004-TF",
+    "statement": "A bond represents a loan you give to a company or government.",
+    "isTrue": true
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "id": "I005-TF",
+    "statement": "Mutual funds allow investors to pool money for diversified investing.",
     "isTrue": true
   },
   {
@@ -84,6 +250,14 @@
     "isTrue": false
   },
   {
+    "category": "investing",
+    "difficulty": "hard",
+    "id": "I006-TF",
+    "statement": "The Rule of 72 helps estimate how long it takes for money to double at a given interest rate.",
+    "isTrue": true
+  },
+
+  {
     "category": "retirement",
     "difficulty": "easy",
     "id": "R002-TF",
@@ -92,9 +266,52 @@
   },
   {
     "category": "retirement",
+    "difficulty": "easy",
+    "id": "R003-TF",
+    "statement": "A 401(k) is a retirement savings plan offered by employers.",
+    "isTrue": true
+  },
+  {
+    "category": "retirement",
     "difficulty": "medium",
     "id": "R001-TF",
     "statement": "Withdrawals from a Traditional IRA are tax-free during retirement.",
+    "isTrue": false
+  },
+  {
+    "category": "retirement",
+    "difficulty": "medium",
+    "id": "R004-TF",
+    "statement": "Roth IRA contributions are made with after-tax dollars.",
+    "isTrue": true
+  },
+  {
+    "category": "retirement",
+    "difficulty": "hard",
+    "id": "R005-TF",
+    "statement": "You can withdraw from your 401(k) at any time without penalties or taxes.",
+    "isTrue": false
+  },
+  {
+    "category": "retirement",
+    "difficulty": "hard",
+    "id": "R006-TF",
+    "statement": "Compound growth allows retirement savings to increase exponentially over time.",
+    "isTrue": true
+  },
+
+  {
+    "category": "taxes",
+    "difficulty": "easy",
+    "id": "T003-TF",
+    "statement": "Taxes are payments individuals and businesses make to the government.",
+    "isTrue": true
+  },
+  {
+    "category": "taxes",
+    "difficulty": "easy",
+    "id": "T004-TF",
+    "statement": "Sales tax is applied to income earned during the year.",
     "isTrue": false
   },
   {
@@ -106,11 +323,26 @@
   },
   {
     "category": "taxes",
+    "difficulty": "medium",
+    "id": "T005-TF",
+    "statement": "Tax deductions reduce your taxable income.",
+    "isTrue": true
+  },
+  {
+    "category": "taxes",
     "difficulty": "hard",
     "id": "T002-TF",
     "statement": "If you are in the 24% tax bracket, your entire income is taxed at 24%.",
     "isTrue": false
   },
+  {
+    "category": "taxes",
+    "difficulty": "hard",
+    "id": "T006-TF",
+    "statement": "A progressive tax system means higher income is taxed at higher rates.",
+    "isTrue": true
+  },
+
   {
     "category": "insurance",
     "difficulty": "easy",
@@ -120,9 +352,52 @@
   },
   {
     "category": "insurance",
+    "difficulty": "easy",
+    "id": "IN003-TF",
+    "statement": "Health insurance helps cover medical expenses.",
+    "isTrue": true
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "id": "IN004-TF",
+    "statement": "The premium is the amount you pay regularly to keep your insurance active.",
+    "isTrue": true
+  },
+  {
+    "category": "insurance",
+    "difficulty": "medium",
+    "id": "IN005-TF",
+    "statement": "Liability insurance covers damages you cause to others or their property.",
+    "isTrue": true
+  },
+  {
+    "category": "insurance",
     "difficulty": "hard",
     "id": "IN002-TF",
     "statement": "Whole life insurance covers you for a specific period and does not build cash value.",
+    "isTrue": false
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "id": "IN006-TF",
+    "statement": "An insurance policy’s coverage limit is the maximum amount the insurer will pay for a claim.",
+    "isTrue": true
+  },
+
+  {
+    "category": "fraud",
+    "difficulty": "easy",
+    "id": "F003-TF",
+    "statement": "Identity theft occurs when someone uses your personal information without permission.",
+    "isTrue": true
+  },
+  {
+    "category": "fraud",
+    "difficulty": "easy",
+    "id": "F004-TF",
+    "statement": "If a deal sounds too good to be true, it’s usually safe to trust.",
     "isTrue": false
   },
   {
@@ -134,9 +409,23 @@
   },
   {
     "category": "fraud",
+    "difficulty": "medium",
+    "id": "F005-TF",
+    "statement": "Skimming devices are used to steal credit card information during legitimate transactions.",
+    "isTrue": true
+  },
+  {
+    "category": "fraud",
     "difficulty": "hard",
     "id": "F002-TF",
     "statement": "A Ponzi scheme uses money from new investors to pay earlier investors instead of generating real profit.",
     "isTrue": true
+  },
+  {
+    "category": "fraud",
+    "difficulty": "hard",
+    "id": "F006-TF",
+    "statement": "Insider trading is a legal way for executives to profit from confidential company information.",
+    "isTrue": false
   }
 ]

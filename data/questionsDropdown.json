@@ -1,277 +1,809 @@
 [
+{
+"category": "Income",
+"difficulty": "easy",
+"question": "Your _ income is your total salary before any deductions, while your _ income is your 'take-home pay' after taxes.",
+"blanks": [
+{
+"correctAnswer": "gross",
+"options": ["gross", "net", "taxable", "passive"]
+},
+{
+"correctAnswer": "net",
+"options": ["net", "gross", "active", "total"]
+}
+]
+},
+{
+"category": "Income",
+"difficulty": "medium",
+"question": "_ income is earned from employment or running a business, while _ income comes from assets you own, like stocks or real estate.",
+"blanks": [
+{
+"correctAnswer": "Active",
+"options": ["Active", "Passive", "Gross", "Net"]
+},
+{
+"correctAnswer": "Passive",
+"options": ["Passive", "Active", "Total", "Taxable"]
+}
+]
+},
+{
+"category": "Income",
+"difficulty": "hard",
+"question": "Income that is subject to taxation is called _ income.",
+"blanks": [
+{
+"correctAnswer": "taxable",
+"options": ["taxable", "gross", "net", "passive"]
+}
+]
+},
+{
+"category": "budgeting",
+"difficulty": "easy",
+"question": "The 50/30/20 rule suggests 50% of income for _, 30% for _, and 20% for savings.",
+"blanks": [
+{
+"correctAnswer": "Needs",
+"options": ["Needs", "Wants", "Debts", "Investments"]
+},
+{
+"correctAnswer": "Wants",
+"options": ["Wants", "Needs", "Savings", "Gifts"]
+}
+]
+},
+{
+"category": "budgeting",
+"difficulty": "medium",
+"question": "A budget _ occurs when income exceeds expenses, while a budget _ occurs when expenses exceed income.",
+"blanks": [
+{
+"correctAnswer": "surplus",
+"options": ["surplus", "deficit", "balance", "zero"]
+},
+{
+"correctAnswer": "deficit",
+"options": ["deficit", "surplus", "overage", "profit"]
+}
+]
+},
+{
+"category": "budgeting",
+"difficulty": "hard",
+"question": "The _ method involves using physical envelopes of cash for different spending categories.",
+"blanks": [
+{
+"correctAnswer": "envelope",
+"options": ["envelope", "zero-based", "snowball", "digital"]
+}
+]
+},
+{
+"category": "saving",
+"difficulty": "easy",
+"question": "An _ fund is a savings account used for unforeseen financial problems and should ideally cover 3-6 months of living _.",
+"blanks": [
+{
+"correctAnswer": "emergency",
+"options": ["emergency", "retirement", "investment", "college"]
+},
+{
+"correctAnswer": "expenses",
+"options": ["expenses", "income", "debts", "wants"]
+}
+]
+},
+{
+"category": "saving",
+"difficulty": "medium",
+"question": "_ (Annual Percentage Yield) reflects the total interest earned including compounding, while _ (Annual Percentage Rate) is the simple interest rate for a year.",
+"blanks": [
+{
+"correctAnswer": "APY",
+"options": ["APY", "APR", "ROI", "WACC"]
+},
+{
+"correctAnswer": "APR",
+"options": ["APR", "APY", "IRR", "FEE"]
+}
+]
+},
+{
+"category": "saving",
+"difficulty": "hard",
+"question": "A _ is a savings certificate with a fixed maturity date and interest rate.",
+"blanks": [
+{
+"correctAnswer": "CD",
+"options": ["CD", "bond", "stock", "IRA"]
+}
+]
+},
+{
+"category": "investing",
+"difficulty": "easy",
+"question": "_ means spreading your investments across different types of assets to reduce _.",
+"blanks": [
+{
+"correctAnswer": "Diversification",
+"options": ["Diversification", "Consolidation", "Liquidation", "Allocation"]
+},
+{
+"correctAnswer": "risk",
+"options": ["risk", "profit", "taxes", "fees"]
+}
+]
+},
+{
+"category": "investing",
+"difficulty": "medium",
+"question": "_ interest is when you earn interest on both your initial _ and the interest that has already accumulated.",
+"blanks": [
+{
+"correctAnswer": "Compound",
+"options": ["Compound", "Simple", "Variable", "Fixed"]
+},
+{
+"correctAnswer": "principal",
+"options": ["principal", "dividend", "payment", "debt"]
+}
+]
+},
+{
+"category": "investing",
+"difficulty": "medium",
+"question": "A _ fund pools money from many investors to buy a diversified portfolio, while an _ fund is a type of mutual fund designed to track a benchmark like the S&P 500.",
+"blanks": [
+{
+"correctAnswer": "mutual",
+"options": ["mutual", "hedge", "pension", "index"]
+},
+{
+"correctAnswer": "index",
+"options": ["index", "bond", "equity", "growth"]
+}
+]
+},
+{
+"category": "investing",
+"difficulty": "hard",
+"question": "The Rule of 72 states that you can estimate how long it will take to double your money by dividing 72 by the annual _ rate.",
+"blanks": [
+{
+"correctAnswer": "interest",
+"options": ["interest", "growth", "inflation", "dividend"]
+}
+]
+},
+{
+"category": "debt",
+"difficulty": "easy",
+"question": "_ debt is backed by collateral, like a house or car, while _ debt is not backed by any asset.",
+"blanks": [
+{
+"correctAnswer": "Secured",
+"options": ["Secured", "Unsecured", "Revolving", "Fixed"]
+},
+{
+"correctAnswer": "unsecured",
+"options": ["Unsecured", "Secured", "Installment", "Variable"]
+}
+]
+},
+{
+"category": "debt",
+"difficulty": "medium",
+"question": "The debt _ method involves paying off the smallest balances first, while the debt _ method prioritizes paying off the highest interest rates first.",
+"blanks": [
+{
+"correctAnswer": "snowball",
+"options": ["snowball", "avalanche", "consolidation", "settlement"]
+},
+{
+"correctAnswer": "avalanche",
+"options": ["avalanche", "snowball", "refinance", "waterfall"]
+}
+]
+},
+{
+"category": "credit",
+"difficulty": "hard",
+"question": "The debt _ method prioritizes paying off debts with the highest interest rates first.",
+"blanks": [
+{
+"correctAnswer": "avalanche",
+"options": ["avalanche", "snowball", "waterfall", "consolidation"]
+}
+]
+},
+{
+"category": "insurance",
+"difficulty": "easy",
+"question": "_ insurance provides a payment to beneficiaries upon the death of the insured, while _ insurance covers medical and surgical expenses.",
+"blanks": [
+{
+"correctAnswer": "Life",
+"options": ["Life", "Health", "Auto", "Home"]
+},
+{
+"correctAnswer": "Health",
+"options": ["Health", "Life", "Disability", "Liability"]
+}
+]
+},
+{
+"category": "insurance",
+"difficulty": "medium",
+"question": "A _ is the fixed amount you pay for a covered loss *before* your insurance policy pays, while a _ is the regular payment you make to keep the policy active.",
+"blanks": [
+{
+"correctAnswer": "deductible",
+"options": ["deductible", "premium", "co-pay", "limit"]
+},
+{
+"correctAnswer": "premium",
+"options": ["premium", "deductible", "claim", "rider"]
+}
+]
+},
+{
+"category": "insurance",
+"difficulty": "medium",
+"question": "_ insurance replaces a portion of your income if you can't work due to illness or injury, while _ insurance covers damage to your home and personal belongings.",
+"blanks": [
+{
+"correctAnswer": "Disability",
+"options": ["Disability", "Liability", "Life", "Health"]
+},
+{
+"correctAnswer": "Homeowners",
+"options": ["Homeowners", "Auto", "Umbrella", "Renters"]
+}
+]
+},
+{
+"category": "insurance",
+"difficulty": "hard",
+"question": "A _ is an amount you must pay out-of-pocket before your insurance coverage kicks in.",
+"blanks": [
+{
+"correctAnswer": "deductible",
+"options": ["deductible", "premium", "copay", "coinsurance"]
+}
+]
+}
+    ,
   {
     "category": "Income",
     "difficulty": "easy",
-    "question": "Your _ income is your total salary before any deductions, while your _ income is your 'take-home pay' after taxes.",
+    "question": "Money you earn from a side job or freelance work is often called _ income, while money from a full-time job is typically _ income.",
     "blanks": [
       {
-        "correctAnswer": "gross",
-        "options": ["gross", "net", "taxable", "passive"]
+        "correctAnswer": "supplemental",
+        "options": ["supplemental", "passive", "unearned", "retirement"]
       },
       {
-        "correctAnswer": "net",
-        "options": ["net", "gross", "active", "total"]
+        "correctAnswer": "primary",
+        "options": ["primary", "secondary", "passive", "irregular"]
       }
     ]
   },
   {
     "category": "Income",
     "difficulty": "medium",
-    "question": "_ income is earned from employment or running a business, while _ income comes from assets you own, like stocks or real estate.",
+    "question": "_ pay is extra compensation for working beyond normal hours, while _ pay is a fixed amount you receive regularly, such as every two weeks.",
     "blanks": [
       {
-        "correctAnswer": "Active",
-        "options": ["Active", "Passive", "Gross", "Net"]
+        "correctAnswer": "Overtime",
+        "options": ["Overtime", "Bonus", "Base", "Holiday"]
       },
       {
-        "correctAnswer": "Passive",
-        "options": ["Passive", "Active", "Total", "Taxable"]
+        "correctAnswer": "salary",
+        "options": ["salary", "commission", "stipend", "tip"]
+      }
+    ]
+  },
+  {
+    "category": "Income",
+    "difficulty": "medium",
+    "question": "Workers who receive a _ are typically employees, while those who receive a _ are usually independent contractors.",
+    "blanks": [
+      {
+        "correctAnswer": "W-2",
+        "options": ["W-2", "1099", "W-4", "1040"]
+      },
+      {
+        "correctAnswer": "1099",
+        "options": ["1099", "W-2", "1040", "W-9"]
       }
     ]
   },
   {
     "category": "Income",
     "difficulty": "hard",
-    "question": "Income that is subject to taxation is called _ income.",
+    "question": "Income from interest, dividends, and capital gains is often called _ income, while wages and salaries are classified as _ income.",
     "blanks": [
       {
-        "correctAnswer": "taxable",
-        "options": ["taxable", "gross", "net", "passive"]
+        "correctAnswer": "investment",
+        "options": ["investment", "earned", "gross", "passive"]
+      },
+      {
+        "correctAnswer": "earned",
+        "options": ["earned", "portfolio", "passive", "unearned"]
       }
     ]
   },
   {
-    "category": "budgeting",
-    "difficulty": "easy",
-    "question": "The 50/30/20 rule suggests 50% of income for _, 30% for _, and 20% for savings.",
+    "category": "Income",
+    "difficulty": "hard",
+    "question": "When your income changes from month to month, it is called _ income, while an income that stays the same each pay period is called _ income.",
     "blanks": [
       {
-        "correctAnswer": "Needs",
-        "options": ["Needs", "Wants", "Debts", "Investments"]
+        "correctAnswer": "variable",
+        "options": ["variable", "fixed", "gross", "net"]
       },
       {
-        "correctAnswer": "Wants",
-        "options": ["Wants", "Needs", "Savings", "Gifts"]
+        "correctAnswer": "fixed",
+        "options": ["fixed", "variable", "passive", "irregular"]
+      }
+    ]
+  },
+
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "question": "Expenses that stay the same each month, like rent, are called _ expenses, while those that change, like groceries, are _ expenses.",
+    "blanks": [
+      {
+        "correctAnswer": "fixed",
+        "options": ["fixed", "variable", "discretionary", "optional"]
+      },
+      {
+        "correctAnswer": "variable",
+        "options": ["variable", "fixed", "mandatory", "automatic"]
       }
     ]
   },
   {
     "category": "budgeting",
     "difficulty": "medium",
-    "question": "A budget _ occurs when income exceeds expenses, while a budget _ occurs when expenses exceed income.",
+    "question": "In a _ budget, every dollar of income is assigned a specific job, while a more traditional _ budget may simply track spending by category.",
     "blanks": [
       {
-        "correctAnswer": "surplus",
-        "options": ["surplus", "deficit", "balance", "zero"]
+        "correctAnswer": "zero-based",
+        "options": ["zero-based", "envelope", "rolling", "incremental"]
       },
       {
-        "correctAnswer": "deficit",
-        "options": ["deficit", "surplus", "overage", "profit"]
+        "correctAnswer": "line-item",
+        "options": ["line-item", "zero-based", "cash", "annual"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "question": "Money set aside regularly for known upcoming expenses, like car repairs or holiday gifts, is often kept in a _ fund within your _.",
+    "blanks": [
+      {
+        "correctAnswer": "sinking",
+        "options": ["sinking", "emergency", "retirement", "general"]
+      },
+      {
+        "correctAnswer": "budget",
+        "options": ["budget", "loan", "credit", "bonus"]
       }
     ]
   },
   {
     "category": "budgeting",
     "difficulty": "hard",
-    "question": "The _ method involves using physical envelopes of cash for different spending categories.",
+    "question": "A _ budget is based on last period's spending plus adjustments, while a _ budget starts from zero and justifies every expense.",
     "blanks": [
       {
-        "correctAnswer": "envelope",
-        "options": ["envelope", "zero-based", "snowball", "digital"]
+        "correctAnswer": "incremental",
+        "options": ["incremental", "zero-based", "flexible", "static"]
+      },
+      {
+        "correctAnswer": "zero-based",
+        "options": ["zero-based", "incremental", "rolling", "top-down"]
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "question": "Spending on things you must have, like housing and food, are _ expenses, while spending on things like dining out and entertainment are _ expenses.",
+    "blanks": [
+      {
+        "correctAnswer": "needs",
+        "options": ["needs", "wants", "luxuries", "extras"]
+      },
+      {
+        "correctAnswer": "wants",
+        "options": ["wants", "needs", "debts", "fees"]
+      }
+    ]
+  },
+
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "question": "Setting up an automatic transfer from checking to savings is an example of _ your savings, which helps you _ consistently.",
+    "blanks": [
+      {
+        "correctAnswer": "automating",
+        "options": ["automating", "delaying", "cancelling", "withdrawing"]
+      },
+      {
+        "correctAnswer": "save",
+        "options": ["save", "borrow", "spend", "invest recklessly"]
       }
     ]
   },
   {
     "category": "saving",
-    "difficulty": "easy",
-    "question": "An _ fund is a savings account used for unforeseen financial problems and should ideally cover 3-6 months of living _.",
+    "difficulty": "medium",
+    "question": "Saving for a vacation next year is a _-term goal, while saving for retirement in 30 years is a _-term goal.",
     "blanks": [
+      {
+        "correctAnswer": "short",
+        "options": ["short", "long", "lifetime", "instant"]
+      },
+      {
+        "correctAnswer": "long",
+        "options": ["long", "short", "medium", "immediate"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "question": "_ yourself first means treating savings like a required bill, while saving only what is left over is a _ approach.",
+    "blanks": [
+      {
+        "correctAnswer": "Paying",
+        "options": ["Paying", "Taxing", "Rewarding", "Loaning"]
+      },
+      {
+        "correctAnswer": "leftover",
+        "options": ["leftover", "planned", "automatic", "scheduled"]
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "hard",
+    "question": "Money set aside for a specific future purchase, like a car or wedding, is often called a _ fund, while money set aside for unexpected events is an _ fund.",
+    "blanks": [
+      {
+        "correctAnswer": "goal",
+        "options": ["goal", "sinking", "debt", "retirement"]
+      },
       {
         "correctAnswer": "emergency",
-        "options": ["emergency", "retirement", "investment", "college"]
-      },
-      {
-        "correctAnswer": "expenses",
-        "options": ["expenses", "income", "debts", "wants"]
-      }
-    ]
-  },
-  {
-    "category": "saving",
-    "difficulty": "medium",
-    "question": "_ (Annual Percentage Yield) reflects the total interest earned including compounding, while _ (Annual Percentage Rate) is the simple interest rate for a year.",
-    "blanks": [
-      {
-        "correctAnswer": "APY",
-        "options": ["APY", "APR", "ROI", "WACC"]
-      },
-      {
-        "correctAnswer": "APR",
-        "options": ["APR", "APY", "IRR", "FEE"]
+        "options": ["emergency", "vacation", "education", "discretionary"]
       }
     ]
   },
   {
     "category": "saving",
     "difficulty": "hard",
-    "question": "A _ is a savings certificate with a fixed maturity date and interest rate.",
+    "question": "When interest is calculated only on the original amount saved, it is _ interest, but when it is calculated on the original amount plus accumulated interest, it is _ interest.",
     "blanks": [
       {
-        "correctAnswer": "CD",
-        "options": ["CD", "bond", "stock", "IRA"]
+        "correctAnswer": "simple",
+        "options": ["simple", "compound", "floating", "variable"]
+      },
+      {
+        "correctAnswer": "compound",
+        "options": ["compound", "simple", "fixed", "introductory"]
       }
     ]
   },
+
   {
     "category": "investing",
     "difficulty": "easy",
-    "question": "_ means spreading your investments across different types of assets to reduce _.",
+    "question": "Stocks represent _ in a company, while bonds represent a _ to a company or government.",
     "blanks": [
       {
-        "correctAnswer": "Diversification",
-        "options": ["Diversification", "Consolidation", "Liquidation", "Allocation"]
+        "correctAnswer": "ownership",
+        "options": ["ownership", "debt", "salary", "dividend"]
       },
       {
-        "correctAnswer": "risk",
-        "options": ["risk", "profit", "taxes", "fees"]
+        "correctAnswer": "loan",
+        "options": ["loan", "gift", "paycheck", "tax"]
       }
     ]
   },
   {
     "category": "investing",
     "difficulty": "medium",
-    "question": "_ interest is when you earn interest on both your initial _ and the interest that has already accumulated.",
+    "question": "_ tolerance describes how much ups and downs in investment value you can handle, while your investing _ describes how long you plan to keep the money invested.",
     "blanks": [
       {
-        "correctAnswer": "Compound",
-        "options": ["Compound", "Simple", "Variable", "Fixed"]
+        "correctAnswer": "Risk",
+        "options": ["Risk", "Tax", "Fee", "Market"]
+      },
+      {
+        "correctAnswer": "time horizon",
+        "options": ["time horizon", "paycheck", "budget", "portfolio"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "medium",
+    "question": "Buying and holding investments for many years is a _-term strategy, while frequently buying and selling to chase quick gains is a _ strategy.",
+    "blanks": [
+      {
+        "correctAnswer": "long",
+        "options": ["long", "short", "weekly", "daily"]
+      },
+      {
+        "correctAnswer": "trading",
+        "options": ["trading", "saving", "budgeting", "indexing"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "question": "The gain you make when you sell an investment for more than you paid is a _ gain, while selling for less than you paid results in a _ loss.",
+    "blanks": [
+      {
+        "correctAnswer": "capital",
+        "options": ["capital", "interest", "dividend", "salary"]
+      },
+      {
+        "correctAnswer": "capital",
+        "options": ["capital", "wage", "bonus", "tax"]
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "question": "The relationship where higher potential return usually comes with higher _ is known as the risk-_ tradeoff.",
+    "blanks": [
+      {
+        "correctAnswer": "risk",
+        "options": ["risk", "tax", "fee", "inflation"]
+      },
+      {
+        "correctAnswer": "return",
+        "options": ["return", "budget", "credit", "loan"]
+      }
+    ]
+  },
+
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "question": "The _ payment is the smallest amount you must pay on a loan or credit card each month, but paying only this usually leads to more _ over time.",
+    "blanks": [
+      {
+        "correctAnswer": "minimum",
+        "options": ["minimum", "maximum", "bonus", "final"]
+      },
+      {
+        "correctAnswer": "interest",
+        "options": ["interest", "income", "salary", "tax"]
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "medium",
+    "question": "The _ on a loan is the percentage cost of borrowing money, while the _ is the original amount of money you borrowed.",
+    "blanks": [
+      {
+        "correctAnswer": "interest rate",
+        "options": ["interest rate", "credit limit", "fee", "term"]
       },
       {
         "correctAnswer": "principal",
-        "options": ["principal", "dividend", "payment", "debt"]
+        "options": ["principal", "dividend", "income", "limit"]
       }
     ]
   },
   {
-    "category": "investing",
+    "category": "debt",
     "difficulty": "medium",
-    "question": "A _ fund pools money from many investors to buy a diversified portfolio, while an _ fund is a type of mutual fund designed to track a benchmark like the S&P 500.",
+    "question": "_ a loan means replacing your existing loan with a new one, often at a lower rate, while _ a loan means changing terms to settle for less than the full amount.",
     "blanks": [
       {
-        "correctAnswer": "mutual",
-        "options": ["mutual", "hedge", "pension", "index"]
+        "correctAnswer": "Refinancing",
+        "options": ["Refinancing", "Defaulting", "Skipping", "Ignoring"]
       },
       {
-        "correctAnswer": "index",
-        "options": ["index", "bond", "equity", "growth"]
+        "correctAnswer": "settling",
+        "options": ["settling", "borrowing", "amortizing", "consolidating"]
       }
     ]
   },
   {
-    "category": "investing",
+    "category": "debt",
     "difficulty": "hard",
-    "question": "The Rule of 72 states that you can estimate how long it will take to double your money by dividing 72 by the annual _ rate.",
+    "question": "A loan where you make equal payments over a set period until the balance is zero is called an _ loan, and the schedule of those payments is an _ schedule.",
     "blanks": [
       {
-        "correctAnswer": "interest",
-        "options": ["interest", "growth", "inflation", "dividend"]
+        "correctAnswer": "amortizing",
+        "options": ["amortizing", "interest-only", "balloon", "revolving"]
+      },
+      {
+        "correctAnswer": "amortization",
+        "options": ["amortization", "repayment", "billing", "collection"]
       }
     ]
   },
   {
     "category": "debt",
+    "difficulty": "hard",
+    "question": "Using one loan to combine multiple debts into a single payment is called debt _, while simply missing payments and ignoring creditors can lead to debt _. ",
+    "blanks": [
+      {
+        "correctAnswer": "consolidation",
+        "options": ["consolidation", "avalanche", "snowball", "refinancing"]
+      },
+      {
+        "correctAnswer": "collections",
+        "options": ["collections", "forgiveness", "relief", "suspension"]
+      }
+    ]
+  },
+
+  {
+    "category": "credit",
     "difficulty": "easy",
-    "question": "_ debt is backed by collateral, like a house or car, while _ debt is not backed by any asset.",
+    "question": "Your _ score is a number that summarizes your credit history, while your _ report provides detailed information about your accounts and payments.",
     "blanks": [
       {
-        "correctAnswer": "Secured",
-        "options": ["Secured", "Unsecured", "Revolving", "Fixed"]
+        "correctAnswer": "credit",
+        "options": ["credit", "income", "budget", "tax"]
       },
       {
-        "correctAnswer": "unsecured",
-        "options": ["Unsecured", "Secured", "Installment", "Variable"]
+        "correctAnswer": "credit",
+        "options": ["credit", "bank", "employment", "insurance"]
       }
     ]
   },
   {
-    "category": "debt",
+    "category": "credit",
     "difficulty": "medium",
-    "question": "The debt _ method involves paying off the smallest balances first, while the debt _ method prioritizes paying off the highest interest rates first.",
+    "question": "Using a high percentage of your available credit limit results in a high credit _ ratio, which can hurt your _ score.",
     "blanks": [
       {
-        "correctAnswer": "snowball",
-        "options": ["snowball", "avalanche", "consolidation", "settlement"]
+        "correctAnswer": "utilization",
+        "options": ["utilization", "payment", "savings", "tax"]
       },
       {
-        "correctAnswer": "avalanche",
-        "options": ["avalanche", "snowball", "refinance", "waterfall"]
+        "correctAnswer": "credit",
+        "options": ["credit", "salary", "budget", "retirement"]
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "question": "A _ inquiry happens when a lender checks your credit for a new application, while a _ inquiry occurs when you check your own credit.",
+    "blanks": [
+      {
+        "correctAnswer": "hard",
+        "options": ["hard", "soft", "light", "deep"]
+      },
+      {
+        "correctAnswer": "soft",
+        "options": ["soft", "hard", "strong", "none"]
       }
     ]
   },
   {
     "category": "credit",
     "difficulty": "hard",
-    "question": "The debt _ method prioritizes paying off debts with the highest interest rates first.",
+    "question": "Payment _ and credit _ are two major factors that influence your overall credit score.",
     "blanks": [
       {
-        "correctAnswer": "avalanche",
-        "options": ["avalanche", "snowball", "waterfall", "consolidation"]
+        "correctAnswer": "history",
+        "options": ["history", "frequency", "size", "source"]
+      },
+      {
+        "correctAnswer": "utilization",
+        "options": ["utilization", "color", "category", "location"]
       }
     ]
   },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "question": "A _ card requires a cash deposit as collateral, while an _ credit card does not require collateral and is based on your creditworthiness.",
+    "blanks": [
+      {
+        "correctAnswer": "secured",
+        "options": ["secured", "unsecured", "prepaid", "rewards"]
+      },
+      {
+        "correctAnswer": "unsecured",
+        "options": ["unsecured", "secured", "store", "charge"]
+      }
+    ]
+  },
+
   {
     "category": "insurance",
     "difficulty": "easy",
-    "question": "_ insurance provides a payment to beneficiaries upon the death of the insured, while _ insurance covers medical and surgical expenses.",
+    "question": "Term life insurance covers you for a specific _ of time, while whole life insurance is designed to last for your _ life.",
     "blanks": [
       {
-        "correctAnswer": "Life",
-        "options": ["Life", "Health", "Auto", "Home"]
+        "correctAnswer": "period",
+        "options": ["period", "premium", "deductible", "claim"]
       },
       {
-        "correctAnswer": "Health",
-        "options": ["Health", "Life", "Disability", "Liability"]
+        "correctAnswer": "whole",
+        "options": ["whole", "partial", "short", "work"]
       }
     ]
   },
   {
     "category": "insurance",
     "difficulty": "medium",
-    "question": "A _ is the fixed amount you pay for a covered loss *before* your insurance policy pays, while a _ is the regular payment you make to keep the policy active.",
+    "question": "Auto insurance _ coverage pays for damage you cause to others, while _ coverage pays for damage to your own vehicle from events like theft or hail.",
     "blanks": [
       {
-        "correctAnswer": "deductible",
-        "options": ["deductible", "premium", "co-pay", "limit"]
+        "correctAnswer": "liability",
+        "options": ["liability", "collision", "comprehensive", "medical"]
       },
       {
-        "correctAnswer": "premium",
-        "options": ["premium", "deductible", "claim", "rider"]
+        "correctAnswer": "comprehensive",
+        "options": ["comprehensive", "liability", "term", "umbrella"]
       }
     ]
   },
   {
     "category": "insurance",
     "difficulty": "medium",
-    "question": "_ insurance replaces a portion of your income if you can't work due to illness or injury, while _ insurance covers damage to your home and personal belongings.",
+    "question": "A _ is a fixed amount you pay for a covered service, like a doctor's visit, while _ is the percentage of costs you pay after the deductible is met.",
     "blanks": [
       {
-        "correctAnswer": "Disability",
-        "options": ["Disability", "Liability", "Life", "Health"]
+        "correctAnswer": "copay",
+        "options": ["copay", "premium", "deductible", "rider"]
       },
       {
-        "correctAnswer": "Homeowners",
-        "options": ["Homeowners", "Auto", "Umbrella", "Renters"]
+        "correctAnswer": "coinsurance",
+        "options": ["coinsurance", "liability", "copay", "limit"]
       }
     ]
   },
   {
     "category": "insurance",
     "difficulty": "hard",
-    "question": "A _ is an amount you must pay out-of-pocket before your insurance coverage kicks in.",
+    "question": "The person who owns an insurance policy is the _, while the person who receives the payout from a life insurance policy is the _.",
     "blanks": [
       {
-        "correctAnswer": "deductible",
-        "options": ["deductible", "premium", "copay", "coinsurance"]
+        "correctAnswer": "policyholder",
+        "options": ["policyholder", "beneficiary", "agent", "adjuster"]
+      },
+      {
+        "correctAnswer": "beneficiary",
+        "options": ["beneficiary", "policyholder", "insurer", "broker"]
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "question": "An _ policy provides extra liability coverage above the limits of your home and auto policies, while a _ policy specifically protects your residence and belongings.",
+    "blanks": [
+      {
+        "correctAnswer": "umbrella",
+        "options": ["umbrella", "term", "health", "collision"]
+      },
+      {
+        "correctAnswer": "homeowners",
+        "options": ["homeowners", "auto", "renters", "disability"]
       }
     ]
   }
