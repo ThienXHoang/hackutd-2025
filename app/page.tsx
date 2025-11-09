@@ -27,7 +27,8 @@ export default function HomePage() {
              px-6 
              hover:bg-[#7c3aed]/10
              hover:text-[#6d28d9]
-             text-white"
+             text-white
+             mt-[750px]"
         >
           BEGIN YOUR QUEST
         </button>
