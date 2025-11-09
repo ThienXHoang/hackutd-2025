@@ -1,7 +1,8 @@
 "use client";
 
-import { QuizState, selectAnswer, submitAnswer, goToNextQuestion, formatDifficulty, formatCategory } from "../../data/gameState";
+import { QuizState, selectAnswer, submitAnswer, goToNextQuestion, formatDifficulty } from "../../data/gameState";
 import { Choice, QuestionType } from "../../data/quiz";
+import { formatGameTopic } from "../../data/gameTopics";
 
 interface QuestionProps {
   gameState: QuizState;
@@ -74,7 +75,7 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
     <div className="mt-8 p-6 bg-gray-900 bg-opacity-90 rounded-lg shadow-2xl border border-gray-700">
       <div className="flex gap-2 mb-4">
         <span className="px-3 py-1 bg-purple-600 text-white rounded-full text-sm font-medium">
-          {formatCategory(gameState.currentCategory)}
+          {formatGameTopic(gameState.selectedTopic)}
         </span>
         <span className={`px-3 py-1 rounded-full text-sm font-medium ${
           gameState.currentDifficulty === 'easy' ? 'bg-green-600 text-white' :

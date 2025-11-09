@@ -18,7 +18,7 @@ export default function TopicSelection({ onSelectTopic }: TopicSelectionProps) {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
+  <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-br from-indigo-900 via-purple-900 to-pink-900">
       <h1 className="text-4xl font-bold text-white mb-6">
         Choose Your Financial Path
       </h1>
