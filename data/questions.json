@@ -1,0 +1,482 @@
+[
+  {
+    "category": "budgeting",
+    "difficulty": "easy",
+    "id": "B001",
+    "question": "Which of the following is considered a 'fixed expense' in a budget?",
+    "choices": [
+      {
+        "text": "Grocery bill",
+        "isCorrect": false
+      },
+      {
+        "text": "Monthly rent payment",
+        "isCorrect": true
+      },
+      {
+        "text": "Entertainment costs",
+        "isCorrect": false
+      },
+      {
+        "text": "Utility bills (gas/electric)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "easy",
+    "id": "S001",
+    "question": "What is the primary purpose of an 'emergency fund'?",
+    "choices": [
+      {
+        "text": "To buy a new car",
+        "isCorrect": false
+      },
+      {
+        "text": "To cover unexpected expenses like medical bills or job loss",
+        "isCorrect": true
+      },
+      {
+        "text": "To invest in the stock market",
+        "isCorrect": false
+      },
+      {
+        "text": "To pay for a vacation",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "banking",
+    "difficulty": "medium",
+    "id": "BA001",
+    "question": "What does FDIC insurance primarily protect?",
+    "choices": [
+      {
+        "text": "Investments in stocks and bonds",
+        "isCorrect": false
+      },
+      {
+        "text": "Deposits in most U.S. banks up to a certain limit",
+        "isCorrect": true
+      },
+      {
+        "text": "The value of your home mortgage",
+        "isCorrect": false
+      },
+      {
+        "text": "The interest rate on loans",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "medium",
+    "id": "C001",
+    "question": "Which factor has the greatest influence on your FICO credit score?",
+    "choices": [
+      {
+        "text": "Types of credit used (e.g., installment, revolving)",
+        "isCorrect": false
+      },
+      {
+        "text": "New credit/recent applications",
+        "isCorrect": false
+      },
+      {
+        "text": "Payment history",
+        "isCorrect": true
+      },
+      {
+        "text": "Length of credit history",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "easy",
+    "id": "D001",
+    "question": "What is the term for the interest rate on a loan that remains the same for the entire loan period?",
+    "choices": [
+      {
+        "text": "Adjustable rate",
+        "isCorrect": false
+      },
+      {
+        "text": "Variable rate",
+        "isCorrect": false
+      },
+      {
+        "text": "Fixed rate",
+        "isCorrect": true
+      },
+      {
+        "text": "Compounding rate",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "hard",
+    "id": "I001",
+    "question": "In investing, what does 'beta' measure?",
+    "choices": [
+      {
+        "text": "The long-term growth rate of a stock",
+        "isCorrect": false
+      },
+      {
+        "text": "A stock's price sensitivity relative to the overall market",
+        "isCorrect": true
+      },
+      {
+        "text": "The company's debt-to-equity ratio",
+        "isCorrect": false
+      },
+      {
+        "text": "The annual dividend yield",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "medium",
+    "id": "R001",
+    "question": "Contributions to which retirement account are made with after-tax dollars, and qualified withdrawals in retirement are tax-free?",
+    "choices": [
+      {
+        "text": "Traditional 401(k)",
+        "isCorrect": false
+      },
+      {
+        "text": "Traditional IRA",
+        "isCorrect": false
+      },
+      {
+        "text": "Roth IRA",
+        "isCorrect": true
+      },
+      {
+        "text": "SEP IRA",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "hard",
+    "id": "T001",
+    "question": "If you are in the 24% marginal tax bracket, what percentage of your **entire** taxable income is taxed at 24%?",
+    "choices": [
+      {
+        "text": "Exactly 24%",
+        "isCorrect": false
+      },
+      {
+        "text": "Less than 24%",
+        "isCorrect": true
+      },
+      {
+        "text": "More than 24%",
+        "isCorrect": false
+      },
+      {
+        "text": "It depends on your deductions",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "easy",
+    "id": "IN001",
+    "question": "What is the money you pay out-of-pocket for covered losses before your insurance coverage begins to pay?",
+    "choices": [
+      {
+        "text": "Premium",
+        "isCorrect": false
+      },
+      {
+        "text": "Deductible",
+        "isCorrect": true
+      },
+      {
+        "text": "Copayment",
+        "isCorrect": false
+      },
+      {
+        "text": "Claim",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "fraud",
+    "difficulty": "medium",
+    "id": "F001",
+    "question": "What is 'phishing' in the context of financial fraud?",
+    "choices": [
+      {
+        "text": "Stealing a physical credit card",
+        "isCorrect": false
+      },
+      {
+        "text": "A type of insurance scam",
+        "isCorrect": false
+      },
+      {
+        "text": "Sending fraudulent emails to trick recipients into revealing personal information",
+        "isCorrect": true
+      },
+      {
+        "text": "Using a computer to illegally transfer money",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "investing",
+    "difficulty": "easy",
+    "id": "I002",
+    "question": "A portfolio that holds a mix of stocks, bonds, and real estate exemplifies which investment principle?",
+    "choices": [
+      {
+        "text": "Market Timing",
+        "isCorrect": false
+      },
+      {
+        "text": "Diversification",
+        "isCorrect": true
+      },
+      {
+        "text": "Dollar-Cost Averaging",
+        "isCorrect": false
+      },
+      {
+        "text": "Short Selling",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "credit",
+    "difficulty": "hard",
+    "id": "C002",
+    "question": "The Credit Utilization Ratio (CUR) is calculated as:",
+    "choices": [
+      {
+        "text": "Total Credit Limit divided by Total Debt",
+        "isCorrect": false
+      },
+      {
+        "text": "Total Credit Used divided by Total Available Credit",
+        "isCorrect": true
+      },
+      {
+        "text": "Total Number of Accounts divided by Number of Accounts with Balances",
+        "isCorrect": false
+      },
+      {
+        "text": "Total Payments Made divided by Total Payments Due",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "budgeting",
+    "difficulty": "medium",
+    "id": "B002",
+    "question": "The 50/30/20 budgeting rule suggests that 20% of your income should be allocated toward:",
+    "choices": [
+      {
+        "text": "Wants (e.g., entertainment, dining out)",
+        "isCorrect": false
+      },
+      {
+        "text": "Needs (e.g., housing, groceries)",
+        "isCorrect": false
+      },
+      {
+        "text": "Savings and debt repayment",
+        "isCorrect": true
+      },
+      {
+        "text": "Taxes and insurance",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "debt",
+    "difficulty": "hard",
+    "id": "D002",
+    "question": "Which debt repayment strategy involves paying off the debt with the highest interest rate first, regardless of the balance?",
+    "choices": [
+      {
+        "text": "Snowball Method",
+        "isCorrect": false
+      },
+      {
+        "text": "Avalanche Method",
+        "isCorrect": true
+      },
+      {
+        "text": "Minimum Payment Method",
+        "isCorrect": false
+      },
+      {
+        "text": "Pro-rata Method",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "retirement",
+    "difficulty": "easy",
+    "id": "R002",
+    "question": "What is the term for an employer's contribution to an employee's 401(k) plan, often conditional on the employee contributing a minimum amount?",
+    "choices": [
+      {
+        "text": "Vesting",
+        "isCorrect": false
+      },
+      {
+        "text": "Withdrawal",
+        "isCorrect": false
+      },
+      {
+        "text": "Tax deferral",
+        "isCorrect": false
+      },
+      {
+        "text": "Matching contribution",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "category": "taxes",
+    "difficulty": "medium",
+    "id": "T002",
+    "question": "A tax deduction reduces your **taxable income**, while a tax credit directly reduces your:",
+    "choices": [
+      {
+        "text": "Adjusted Gross Income (AGI)",
+        "isCorrect": false
+      },
+      {
+        "text": "Marginal tax rate",
+        "isCorrect": false
+      },
+      {
+        "text": "Total tax owed (tax liability)",
+        "isCorrect": true
+      },
+      {
+        "text": "W-2 earnings",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "saving",
+    "difficulty": "medium",
+    "id": "S002",
+    "question": "The concept where the interest you earn also begins to earn interest is known as:",
+    "choices": [
+      {
+        "text": "Simple interest",
+        "isCorrect": false
+      },
+      {
+        "text": "Annual Percentage Yield (APY)",
+        "isCorrect": false
+      },
+      {
+        "text": "Compounding",
+        "isCorrect": true
+      },
+      {
+        "text": "Inflation",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "insurance",
+    "difficulty": "hard",
+    "id": "IN002",
+    "question": "Which type of life insurance covers you for a specific period of time and typically does not build cash value?",
+    "choices": [
+      {
+        "text": "Whole Life",
+        "isCorrect": false
+      },
+      {
+        "text": "Universal Life",
+        "isCorrect": false
+      },
+      {
+        "text": "Term Life",
+        "isCorrect": true
+      },
+      {
+        "text": "Variable Life",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "banking",
+    "difficulty": "easy",
+    "id": "BA002",
+    "question": "What is the primary difference between a checking account and a savings account?",
+    "choices": [
+      {
+        "text": "Checking accounts offer higher interest rates.",
+        "isCorrect": false
+      },
+      {
+        "text": "Savings accounts are used for day-to-day transactions and spending.",
+        "isCorrect": false
+      },
+      {
+        "text": "Checking accounts are for daily transactions; savings accounts are for storing and growing funds.",
+        "isCorrect": true
+      },
+      {
+        "text": "Only checking accounts are covered by FDIC insurance.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "fraud",
+    "difficulty": "hard",
+    "id": "F002",
+    "question": "What financial scam is characterized by paying off old investors with money collected from new investors, rather than actual profit?",
+    "choices": [
+      {
+        "text": "Pyramid Scheme",
+        "isCorrect": false
+      },
+      {
+        "text": "Ponzi Scheme",
+        "isCorrect": true
+      },
+      {
+        "text": "Pump-and-Dump Scheme",
+        "isCorrect": false
+      },
+      {
+        "text": "Advance-Fee Fraud",
+        "isCorrect": false
+      }
+    ]
+  }
+]
