@@ -158,7 +158,20 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
   };
 
   return (
-    <div className="mt-8 p-6 bg-purple-900 bg-opacity-40 rounded-lg shadow-2xl border-2 border-purple-500 backdrop-blur-sm">
+    <div className="mt-8 p-6 bg-purple-900 bg-opacity-40 rounded-lg shadow-2xl border-2 border-purple-500 backdrop-blur-sm relative overflow-hidden">
+      {/* Yellow sparkles */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-4 left-8 w-1 h-1 bg-yellow-300 rounded-full animate-pulse"></div>
+        <div className="absolute top-12 right-16 w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
+        <div className="absolute bottom-20 left-12 w-1 h-1 bg-yellow-300 rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
+        <div className="absolute top-24 left-24 w-1 h-1 bg-yellow-400 rounded-full animate-pulse" style={{animationDelay: '0.9s'}}></div>
+        <div className="absolute bottom-32 right-20 w-1.5 h-1.5 bg-yellow-300 rounded-full animate-pulse" style={{animationDelay: '1.2s'}}></div>
+        <div className="absolute top-40 right-32 w-1 h-1 bg-yellow-400 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute bottom-8 left-32 w-1 h-1 bg-yellow-300 rounded-full animate-pulse" style={{animationDelay: '1.8s'}}></div>
+        <div className="absolute top-32 right-8 w-1.5 h-1.5 bg-yellow-400 rounded-full animate-pulse" style={{animationDelay: '2.1s'}}></div>
+      </div>
+      
+      <div className="relative z-10">
       <div className="flex gap-2 mb-4">
         <span className="px-3 py-1 bg-purple-600 text-white rounded-full text-sm font-medium">
           {formatGameTopic(gameState.selectedTopic)}
@@ -292,6 +305,7 @@ export default function Question({ gameState, setGameState }: QuestionProps) {
             Next Question →
           </button>
         )}
+        </div>
       </div>
     </div>
   );
