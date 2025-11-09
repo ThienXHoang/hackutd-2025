@@ -21,6 +21,7 @@ export interface Choice {
 }
 
 export interface MultipleChoiceQuestion {
+  id: string; // Add this line
   type: QuestionType.MultipleChoice;
   category: string;
   difficulty: string;
@@ -29,6 +30,7 @@ export interface MultipleChoiceQuestion {
 }
 
 export interface TrueFalseQuestion {
+  id: string; // Add this line
   type: QuestionType.TrueFalse;
   category: string;
   difficulty: string;
@@ -37,6 +39,7 @@ export interface TrueFalseQuestion {
 }
 
 export interface FillInTheBlankQuestion {
+  id: string; // Add this line
   type: QuestionType.FillInTheBlank;
   category: string;
   difficulty: string;
@@ -45,6 +48,7 @@ export interface FillInTheBlankQuestion {
 }
 
 export interface DropdownQuestion {
+  id: string; // Add this line
   type: QuestionType.Dropdown;
   category: string;
   difficulty: string;
@@ -62,7 +66,8 @@ export type Question =
   | DropdownQuestion;
 
 // Convert multiple choice data
-const multipleChoiceQuestions: MultipleChoiceQuestion[] = multipleChoiceData.map((q: any) => ({
+const multipleChoiceQuestions: MultipleChoiceQuestion[] = multipleChoiceData.map((q: any, index) => ({
+  id: `mc-${index}`,
   type: QuestionType.MultipleChoice,
   category: q.category,
   difficulty: q.difficulty,
@@ -71,7 +76,8 @@ const multipleChoiceQuestions: MultipleChoiceQuestion[] = multipleChoiceData.map
 }));
 
 // Convert true/false data
-const trueFalseQuestions: TrueFalseQuestion[] = trueFalseData.map((q: any) => ({
+const trueFalseQuestions: TrueFalseQuestion[] = trueFalseData.map((q: any, index) => ({
+  id: `tf-${index}`,
   type: QuestionType.TrueFalse,
   category: q.category,
   difficulty: q.difficulty,
@@ -80,7 +86,8 @@ const trueFalseQuestions: TrueFalseQuestion[] = trueFalseData.map((q: any) => ({
 }));
 
 // Convert dropdown data
-const dropdownQuestions: DropdownQuestion[] = dropdownData.map((q: any) => ({
+const dropdownQuestions: DropdownQuestion[] = dropdownData.map((q: any, index) => ({
+  id: `dd-${index}`,
   type: QuestionType.Dropdown,
   category: q.category,
   difficulty: q.difficulty,
@@ -89,7 +96,8 @@ const dropdownQuestions: DropdownQuestion[] = dropdownData.map((q: any) => ({
 }));
 
 // Convert fill-in-the-blank data (FRQ style)
-const fillInQuestions: FillInTheBlankQuestion[] = fillInData.map((q: any) => ({
+const fillInQuestions: FillInTheBlankQuestion[] = fillInData.map((q: any, index) => ({
+  id: `fb-${index}`,
   type: QuestionType.FillInTheBlank,
   category: q.category,
   difficulty: q.difficulty,
@@ -132,16 +140,25 @@ function questionMatchesTopic(q: Question, topic: GameTopic): boolean {
   }
 }
 
+// Add a Set to store answered question IDs
+const answeredQuestions = new Set<string>();
+
+// Add function to mark questions as answered
+export function markQuestionAsAnswered(questionId: string) {
+  answeredQuestions.add(questionId);
+}
+
 // Get random question for a topic and difficulty with type filtering
 export function getRandomQuestionForTopic(
   topic: GameTopic,
   difficulty: Difficulty
 ): Question | null {
-  // Filter by topic and difficulty
+  // Filter by topic, difficulty, and unanswered status
   const byTopicAndDifficulty = allQuestions.filter((q) => {
     const matchesTopic = questionMatchesTopic(q, topic);
     const matchesDifficulty = q.difficulty.toLowerCase() === difficulty.toLowerCase();
-    return matchesTopic && matchesDifficulty;
+    const isUnanswered = !answeredQuestions.has(q.id);
+    return matchesTopic && matchesDifficulty && isUnanswered;
   });
 
   // Determine allowed types based on difficulty
@@ -195,4 +212,9 @@ export function getRandomQuestion(category: string, difficulty: string): Questio
 
   const randomIndex = Math.floor(Math.random() * filtered.length);
   return filtered[randomIndex];
+}
+
+// Add function to reset answered questions (useful for new games)
+export function resetAnsweredQuestions() {
+  answeredQuestions.clear();
 }
